@@ -28,7 +28,7 @@ body{
 #parcoursItem p,#parcoursItem span{
   color: black;
 }
-.skillitem{
+.carousel{
     background-image: radial-gradient(circle at center center, rgb(252, 252, 252),rgb(82, 82, 82));
     color: black;
 }
