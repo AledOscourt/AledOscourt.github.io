@@ -256,37 +256,59 @@
       </button>
     </div>
   </div>
-  <div class="container  my-5 contact" >
+  <div class="container  my-5 contact">
     <div class="title text-center mb-4 mt-5" id="contact">
       <h2>Contactez-nous</h2>
     </div>
     <div class="formulairerect">
-      <form class="container mb-5 ">
+      <form class="container mb-5 " method="get" action="#">
         <fieldset class="row justify-content-around pt-5">
-          <input type="text" class="col-9 col-md-10 col-lg-4 mb-2 p-2" id="lastName" name="lastName"
-            placeholder=" Nom : Fournier" />
-          <input type="text" class="col-9 col-md-10 col-lg-4 mb-2 p-2" id="businessName" name="businessName"
-            placeholder=" Nom de société : CollectingPop" />
+          <div class="col-9 col-md-10 col-lg-4 mb-2  p-2 form-floating">
+            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Fournier" />
+            <label for="lastName">Nom</label>
+          </div>
+          <div class="col-9 col-md-10 col-lg-4 mb-2  p-2 form-floating">
+            <input type="text" class="form-control" id="businessName" name="businessName" placeholder="CollectingPop" />
+            <label for="businessName">Nom d'entreprise</label>
+          </div>
         </fieldset>
         <fieldset class="row justify-content-around pt-3">
-          <input type="email" class="col-9 col-md-10 col-lg-4 mb-2 p-2" id="email" name="email"
-            placeholder=" Adresse email : julien.fournier2508@gmail.com" />
-          <input type="text" class="col-9 col-md-10 col-lg-4 mb-2 p-2" id="telephone" name="telephone"
-            placeholder=" Numéro de téléphone : 06-03-78-58-82" />
+          <div class="col-9 col-md-10 col-lg-4 mb-2  p-2 form-floating">
+            <input type="email" class=" form-control" id="email" name="email"
+              placeholder="julien.fournier2508@gmail.com" />
+            <label for="email">Email address</label>
+          </div>
+          <div class="col-9 col-md-10 col-lg-4 mb-2  p-2 form-floating">
+            <input type="text" class="form-control" id="telephone" name="telephone" placeholder="06-03-78-58-82" />
+            <label for="telephone">Telephone</label>
+          </div>
+
         </fieldset>
         <fieldset class="row justify-content-center pt-3 ms-lg-5 me-lg-5 ">
-          <input type="text" class="col-9 col-md-10 col-lg-11 mb-2 p-2 " id="address" name="address"
-            placeholder=" Adresse : xx rue La Fayette" />
+          <div class="col-9 col-md-10 col-lg-11 mb-2 p-2 form-floating">
+            <input type="text" class="form-control" id="address" name="address"
+              placeholder=" Adresse : xx rue La Fayette" />
+            <label for="address">Adresse</label>
+          </div>
         </fieldset>
         <fieldset class="row justify-content-around pt-3">
-          <input type="text" class="col-9 col-md-10 col-lg-4 mb-2 p-2" id="postalCode" name="postalCode"
+          <div class="col-9 col-md-10 col-lg-4 mb-2  p-2 form-floating">
+            <input type="text" class="form-control" id="postalCode" name="postalCode"
             placeholder=" Code postal : 75000" />
-          <input type="text" class="col-9 col-md-10 col-lg-4 mb-2 p-2" id="city" name="city"
+            <label for="postalCode">Code postal</label>
+          </div>
+          <div class="col-9 col-md-10 col-lg-4 mb-2  p-2 form-floating">
+            <input type="text" class="form-control" id="city" name="city"
             placeholder=" Nom de la ville : Paris" />
+            <label for="city">Ville</label>
+          </div>
         </fieldset>
         <fieldset class="row justify-content-center ms-lg-5 pt-3 me-lg-5 ">
-          <textarea type="text" class="col-9 col-md-10 col-lg-11 mb-2 p-2  " id="message" name="message"
-            placeholder=" Message" wrap="soft"></textarea>
+          <div class="col-9 col-md-10 col-lg-11 mb-2 p-2 form-floating">
+            <textarea type="text" class="form-control" id="message" name="message" placeholder="Message" wrap="soft"></textarea>
+            <label for="message">Message à m'adresser</label>
+          </div>
+          
         </fieldset>
         <fieldset class="row justify-content-center pt-2 pb-5">
           <input type="submit" class="col-4 col-sm-2 mb-2 p-2 button" value="Envoyer" />
@@ -313,7 +335,7 @@
         </div>
         <div class="mt-2 mb-4 col-auto text-center">
           <span class="fa-stack introduction_logo">
-            <a href="https://linkedin.com/in/JulienFournier555556652516165661565516154" title="linkedIn">
+            <a href="https://linkedin.com/in/JulienFournier555556652516165661565516154" title="linkedIn" target="_blank">
               <i class="fas fa-circle fa-stack-2x text-success" aria-hidden="true"></i>
               <i class="fab fa-linkedin-in fa-stack-1x text-white " aria-hidden="true"></i>
             </a>
