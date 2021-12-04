@@ -1,0 +1,37 @@
+header {
+    height: 100vh;
+    box-shadow: inset 0px 0px 1px #FFFAFA, inset 0px 0px 3px #e840ba, inset 0px 0px 7px #FFFAFA, inset 0px 0px 15px #e840ba;
+    background-image: url('../img/Developer.png');
+    background-size: cover;
+    .row {
+        h1 {
+            margin-top: 20vh;
+        }
+        .headerText {
+            text-shadow: 0px 0px 5px #e840ba, 0px 0px 10px#FFFAFA, 0px 0px 15px #e840ba;
+        }
+    }
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.2);
+    i {
+        color: white;
+        text-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba;
+    }
+    a {
+        text-transform: uppercase;
+        color: white;
+        text-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba;
+        &:hover {
+            color: white;
+            text-shadow: 0px 0px 2px#FFFAFA, 0px 0px 5px #e840ba, 0px 0px 10px #FFFAFA, 0px 0px 20px #e840ba;
+        }
+    }
+}
+
+@media screen AND(max-width:765px) {
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
