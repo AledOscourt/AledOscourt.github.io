@@ -27,6 +27,9 @@ header {
             color: white;
             text-shadow: 0px 0px 2px#FFFAFA, 0px 0px 5px #e840ba, 0px 0px 10px #FFFAFA, 0px 0px 20px #e840ba;
         }
+        &:focus {
+            color: white;
+        }
     }
 }
 
