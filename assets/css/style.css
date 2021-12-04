@@ -1,26 +1,62 @@
+@charset "UTF-8";
+/***************************************************************************************
+    *********************************** Variable Générale **********************************
+    ***************************************************************************************/
+/***************************************************************************************
+    *************************************** Générale ***************************************
+    ***************************************************************************************/
+body {
+  background-color: #020402;
+  overflow-x: hidden;
+}
+
+.buttonShadowBlue:hover {
+  -webkit-box-shadow: 0px 0px 15px 5px #58A4B0;
+          box-shadow: 0px 0px 15px 5px #58A4B0;
+}
+
+.buttonShadowBlue:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.buttonShadowBlue:focus:hover {
+  -webkit-box-shadow: 0px 0px 15px 5px #58A4B0;
+          box-shadow: 0px 0px 15px 5px #58A4B0;
+}
+
+/***************************************************************************************
+    *************************************** Header *****************************************
+    ***************************************************************************************/
 header {
   height: 100vh;
-  -webkit-box-shadow: inset 0px 0px 1px #FFFAFA, inset 0px 0px 3px #e840ba, inset 0px 0px 7px #FFFAFA, inset 0px 0px 15px #e840ba;
-          box-shadow: inset 0px 0px 1px #FFFAFA, inset 0px 0px 3px #e840ba, inset 0px 0px 7px #FFFAFA, inset 0px 0px 15px #e840ba;
-  background-image: url("../img/Developer.png");
+  -webkit-box-shadow: 0px 0px 1px #FFFAFA, 0px 0px 3px #e840ba, 0px 0px 7px #FFFAFA, 0px 0px 15px #e840ba, inset 0px 0px 1px #FFFAFA, inset 0px 0px 3px #e840ba, inset 0px 0px 7px #FFFAFA, inset 0px 0px 15px #e840ba;
+          box-shadow: 0px 0px 1px #FFFAFA, 0px 0px 3px #e840ba, 0px 0px 7px #FFFAFA, 0px 0px 15px #e840ba, inset 0px 0px 1px #FFFAFA, inset 0px 0px 3px #e840ba, inset 0px 0px 7px #FFFAFA, inset 0px 0px 15px #e840ba;
+  background-image: url("../img/devenir-developpeur-web-mobile.jpg");
   background-size: cover;
+  overflow-x: hidden;
 }
 
-header .row h1 {
+header .row .headerTitle {
   margin-top: 20vh;
-}
-
-header .row .headerText {
+  font-size: 4rem;
   text-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #FFFAFA, 0px 0px 15px #e840ba;
 }
 
-.navbar {
-  background-color: rgba(0, 0, 0, 0.2);
+header .row .headerText {
+  font-size: 2rem;
+  text-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #FFFAFA, 0px 0px 15px #e840ba;
 }
 
-.navbar i {
-  color: white;
-  text-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba;
+header .row .buttonHeader {
+  margin-top: 30vh;
+}
+
+/***************************************************************************************
+    **************************************** Navbar ****************************************
+    ***************************************************************************************/
+.navbar {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .navbar a {
@@ -38,9 +74,90 @@ header .row .headerText {
   color: white;
 }
 
+/***************************************************************************************
+    **************************************** Content ****************************************
+    ***************************************************************************************/
+.content {
+  background-image: radial-gradient(circle at center center, rgba(71, 71, 71, 0.47), #080808);
+  -webkit-box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #58A4B0, 0px 0px 10px #FFFAFA, 0px 0px 15px #58A4B0;
+          box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #58A4B0, 0px 0px 10px #FFFAFA, 0px 0px 15px #58A4B0;
+}
+
+/***************************************************************************************
+    **************************************** Présentation **********************************
+    ***************************************************************************************/
+#aboutMe .profilPhotoContainer {
+  position: relative;
+}
+
+#aboutMe .profilPhotoContainer:hover .profilPhoto {
+  opacity: 1;
+}
+
+#aboutMe .profilPhoto {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 7.5%;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+/***************************************************************************************
+    **************************************** Compétence ************************************
+    ***************************************************************************************/
+#skill .skillIcon {
+  font-size: 20vh;
+  text-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba;
+}
+
+#skill .frontEnd .frontEndTitle {
+  color: #6e41be;
+}
+
+#skill .frontEnd .frontEndIcon {
+  color: #6e41be;
+}
+
+#skill .frontEnd .frontEndbody h4 {
+  color: #FFFAFA;
+}
+
+#skill .backEnd .backEndTitle {
+  color: #1ca2f4;
+}
+
+#skill .backEnd .backEndIcon {
+  color: #1ca2f4;
+}
+
 @media screen and (max-width: 765px) {
+  header {
+    background-image: url("../img/devenir-developpeur-web-mobile.jpg");
+  }
+  header .row .headerTitle {
+    font-size: 2.5rem;
+  }
+  header .row .headerText {
+    font-size: 1rem;
+  }
   .navbar {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .navbar .homeIcon {
+    display: none;
+  }
+  #aboutMe .profilAvatar,
+  #aboutMe .profilPhoto {
+    height: 30vh;
+  }
+  #aboutMe .profilPhoto {
+    left: 7.5%;
+  }
+  #skill .skillIcon {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

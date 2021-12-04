@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
-    <header class="container-fluid">
+    <!-------------------------------------------------------------------------------------------------------------
+    -------------------------------------------- Header -----------------------------------------------------------
+    -------------------------------------------------------------------------------------------------------------->
+    <header class="container-fluid" id="homeOfPage">
         <div class="row text-white text-center">
-            <h1 class="headerText">Julien Fournier</h1>
+            <h1 class=" headerTitle animate__animated animate__rubberBand animate__delay-2s animate__slow">Julien Fournier</h1>
         </div>
         <div class="row text-center mt-5">
             <h2 class="text-white fs-1 headerText">
@@ -22,37 +26,128 @@
                 <span id="formationHeader"> </span> &nbsp;
             </h2>
         </div>
+        <div class="row justify-content-center mt-3">
+
+            <a href="assets/cv/cv Julien_Fournier[888].pdf" target="_blank" class="btn btn-outline-light col-md-2 col-8 buttonHeader buttonShadowBlue fs-5">
+                Cv format PDF
+            </a>
+        </div>
     </header>
-    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <!-------------------------------------------------------------------------------------------------------------
+    -------------------------------------------- Navbar -----------------------------------------------------------
+    -------------------------------------------------------------------------------------------------------------->
+    <nav class="navbar navbar-expand-md fixed-top" id="navbar">
         <button class="navbar-toggler ms-md-0 ms-2 col-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon h-100 text-white"><i class="fas fa-bars"></i></span>
+        <span class="navbar-toggler-icon h-100 text-white"><i class="bi bi-justify"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="col-lg d-flex navbar-nav justify-content-between mx-5 h4 ">
+            <ul class="col-md d-flex navbar-nav justify-content-between mx-5 h4 ">
                 <li class="nav-item d-flex col text-center">
-                    <a class="nav-link col" href="#">Présentation</a>
+                    <a class="nav-link col" href="#homeOfPage"><i class="bi bi-house-door homeIcon"></i><span class="d-md-none">Accueil</span></a>
                 </li>
                 <li class="nav-item d-flex col text-center">
-                    <a class="nav-link col" href="#">Formation</a>
+                    <a class="nav-link col" href="#aboutMe">Présentation</a>
                 </li>
                 <li class="nav-item d-flex col text-center">
-                    <a class="nav-link col" href="#">Expérience</a>
+                    <a class="nav-link col" href="#skill">Compétences</a>
                 </li>
                 <li class="nav-item d-flex col text-center">
-                    <a class="nav-link col" href="#">Compétence</a>
+                    <a class="nav-link col" href="#">Parcour</a>
                 </li>
                 <li class="nav-item d-flex col text-center">
-                    <a class="nav-link col" href="#">Portfolio</a>
+                    <a class="nav-link col" href="#">Réalisation</a>
                 </li>
                 <li class="nav-item d-flex col text-center">
                     <a class="nav-link col" href="#">Contact</a>
                 </li>
             </ul>
-
         </div>
     </nav>
+    <!-------------------------------------------------------------------------------------------------------------
+    -------------------------------------------- Présentation -----------------------------------------------------
+    -------------------------------------------------------------------------------------------------------------->
+    <div class="container my-5 rounded p-3  content" id="aboutMe" data-aos="fade-zoom-in" data-aos-duration="2000">
+        <div class="row">
+            <div class="col-md-4 text-center profilPhotoContainer my-auto">
+                <img src="assets/img/avatarPhotoProfil.png" alt="photo-profil" class="rounded img-fluid profilAvatar h-md-100" />
+                <img src="assets/img/photoProfil.jpg" alt="photo-profil" class="rounded img-fluid profilPhoto h-md-100" />
+            </div>
+            <div class="col text-white text-center">
+                <h3>Présentation</h3>
+                <div class="text-start col-10 mx-auto">
+                    <p>
+                        Ayant réaliser une formation intensif de 6 mois en tant que developpeur web et web mobile à la Manu, Noyon. Cette formation m'a permi d'acquérir de nombreuses compétences pour pouvoir rentrer dans le monde travail et pouvoir ettofer mon panel de compétences.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae tincidunt lacus, vitae mattis orci. Ut interdum purus mi, in ullamcorper mi eleifend at. Praesent mollis nibh sit amet facilisis tempor. Fusce vel purus dui. Curabitur elementum urna
+                        non est maximus, nec vehicula turpis ullamcorper. Quisque venenatis ante et risus congue sodales. Phasellus laoreet porttitor sem,
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae tincidunt lacus, vitae mattis orci. Ut interdum purus mi, in ullamcorper mi eleifend at. Praesent mollis nibh sit amet facilisis tempor. Fusce vel purus dui. Curabitur elementum urna
+                        non est maximus, nec vehicula turpis ullamcorper. Quisque venenatis ante et risus congue sodales.
+                    </p>
+                </div>
+                <a class="btn btn-outline-light col-md-3  mt-2 col-8 buttonShadowBlue fs-5">
+                    Me contacter
+               </a>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5 rounded p-3  content" id="skill" data-aos="fade-zoom-in" data-aos-duration="2000">
+        <div class="row ">
+            <h3 class="text-center text-white">Compétences</h3>
+            <div class="container my-2 ms-md-5">
+                <div class="row m-md-5 m-2 frontEnd">
+                    <div class="col-md-8 content container">
+                        <div class="row">
+                            <h4 class="text-center my-2 frontEndTitle">Front-End</h4>
+                        </div>
+                        <div class="row mx-md-3 mx-1">
+                            <div class="col-md container frontEndbody">
+                                <div class="row">
+                                    <h4 class="col-md-4 col">HTML5</h4>
+                                    <div class="d-flex col frontEndIcon">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md container frontEndbody">
+                                <div class="row">
+                                    <h4 class="col-md-5 col">Bootstrap5</h4>
+                                    <div class="d-flex col frontEndIcon">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="bi bi-code-slash ms-5 my-auto col-3 skillIcon frontEndIcon"></i>
+                </div>
+                <div class="row m-5 backEnd">
+                    <i class="bi bi-server col-3 my-auto skillIcon backEndIcon"></i>
+                    <div class="col-md-8 content">
+                        <h4 class="text-center my-2 backEndTitle">Back-End</h4>
+                        <div class="col container">
+                            <div class="row"></div>
+                        </div>
+                        <div class="col container">
 
-    <script src="https://kit.fontawesome.com/17e4bc2abc.js" crossorigin="anonymous"></script>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
     <script src="assets/js/script.js"></script>
