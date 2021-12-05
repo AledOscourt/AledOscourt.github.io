@@ -10,7 +10,8 @@ let navbarNeon = document.getElementById('navbarNeon');
 let homeOfPageNavbar = document.getElementById('homeOfPageNavbar');
 let aboutMeNavbar = document.getElementById('aboutMeNavbar');
 let skillNavbar = document.getElementById('skillNavbar');
-
+let careerNavbar = document.getElementById('careerNavbar');
+let chevronHeader = document.getElementById('chevronHeader');
 //Empéche la sélection de texte dans le document ainsi que le dblclick
 document.addEventListener('mousedown', function(e) { e.preventDefault(); }, false);
 /****************************************************************************************
@@ -31,7 +32,7 @@ window.onscroll = () => {
 }
 window.onload = () => {
     let typed = new Typed('#formationHeader', {
-        strings: [, 'DÉVELOPPEUR WEB ...^1500', 'FULL STACK JUNIOR^1500'],
+        strings: [, 'DÉVELOPPEUR WEB^1500', 'FULL STACK JUNIOR^1500'],
         typeSpeed: 80,
         backSpeed: 90,
         showCursor: false,
@@ -44,12 +45,24 @@ window.onload = () => {
  ***************************************************************************************/
 homeOfPageNavbar.onclick = () => {
     window.scrollTo(0, 0);
-
 }
 
 aboutMeNavbar.onclick = () => {
-    window.scrollTo(0, 720);
+    window.scrollTo(0, 710);
 }
+
 skillNavbar.onclick = () => {
-    window.scrollTo(0, 1220);
+    window.scrollTo(0, 1210);
+}
+
+careerNavbar.onclick = () => {
+    window.scrollTo(0, 2000);
+}
+
+/****************************************************************************************
+ **************************************** Header chevron onclick ****************************
+ ***************************************************************************************/
+chevronHeader.onclick = () => {
+    window.scrollTo(0, 710);
+
 }

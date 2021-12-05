@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /***************************************************************************************
-    *********************************** Variable Générale **********************************
-    ***************************************************************************************/
+*********************************** Variable Générale **********************************
+***************************************************************************************/
 /***************************************************************************************
     *************************************** Générale ***************************************
     ***************************************************************************************/
@@ -59,6 +59,96 @@ header .row .buttonHeader {
   z-index: 1;
 }
 
+header .row .chevron {
+  cursor: pointer;
+  z-index: 1;
+  font-size: 2rem;
+}
+
+header .row .chevron .firstChevron {
+  position: absolute;
+  -webkit-animation-name: chevroAnimation;
+          animation-name: chevroAnimation;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  opacity: 0;
+  left: 49%;
+}
+
+header .row .chevron .secondChevron {
+  position: absolute;
+  -webkit-animation-name: chevroAnimation;
+          animation-name: chevroAnimation;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  opacity: 0;
+  left: 49%;
+}
+
+header .row .chevron .thirdChevron {
+  position: absolute;
+  -webkit-animation-name: chevroAnimation;
+          animation-name: chevroAnimation;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  opacity: 0;
+  left: 49%;
+}
+
+header .row .chevron .forthChevron {
+  position: absolute;
+  -webkit-animation-name: chevroAnimation;
+          animation-name: chevroAnimation;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 2.25s;
+          animation-delay: 2.25s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  opacity: 0;
+  left: 49%;
+}
+
+@-webkit-keyframes chevroAnimation {
+  from {
+    top: 83%;
+    opacity: 0;
+  }
+  50% {
+    top: 86%;
+    opacity: 1;
+  }
+  to {
+    top: 89%;
+    opacity: 0;
+  }
+}
+
+@keyframes chevroAnimation {
+  from {
+    top: 83%;
+    opacity: 0;
+  }
+  50% {
+    top: 86%;
+    opacity: 1;
+  }
+  to {
+    top: 89%;
+    opacity: 0;
+  }
+}
+
 header::after {
   content: '\A';
   position: absolute;
@@ -106,54 +196,70 @@ header::after {
 /***************************************************************************************
     **************************************** Présentation **********************************
     ***************************************************************************************/
-#aboutMe .profilPhotoContainer {
+.aboutMe .profilPhotoContainer {
   position: relative;
 }
 
-#aboutMe .profilPhotoContainer:hover .profilPhoto {
+.aboutMe .profilPhotoContainer:hover .profilPhoto {
   opacity: 1;
 }
 
-#aboutMe .profilPhoto {
+.aboutMe .profilPhoto {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 7.5%;
   right: 0;
   opacity: 0;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: 1.3s ease;
+  transition: 1.3s ease;
 }
 
 /***************************************************************************************
     **************************************** Compétence ************************************
     ***************************************************************************************/
-#skill .skillIcon {
+.skill {
+  overflow: hidden;
+}
+
+.skill .skillIcon {
   font-size: 20vh;
   text-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba;
 }
 
-#skill .frontEnd .frontEndTitle {
+.skill .frontEnd .frontEndTitle {
   color: #6e41be;
 }
 
-#skill .frontEnd .frontEndIcon {
+.skill .frontEnd .frontEndIcon {
   color: #6e41be;
 }
 
-#skill .frontEnd .frontEndBody h4 {
+.skill .frontEnd .frontEndBody h4 {
   color: #FFFAFA;
 }
 
-#skill .backEnd .backEndTitle {
+.skill .backEnd .backEndTitle {
   color: #1ca2f4;
 }
 
-#skill .backEnd .backEndIcon {
+.skill .backEnd .backEndIcon {
   color: #1ca2f4;
 }
 
-#skill .backEnd .backEndBody h4 {
+.skill .backEnd .backEndBody h4 {
+  color: #FFFAFA;
+}
+
+.skill .webDesign .webDesignTitle {
+  color: #e840ba;
+}
+
+.skill .webDesign .webDesignIcon {
+  color: #e840ba;
+}
+
+.skill .webDesign .webDesignBody h4 {
   color: #FFFAFA;
 }
 
@@ -173,10 +279,10 @@ header::after {
   .navbar .homeIcon {
     display: none;
   }
-  #aboutMe .profilPhoto {
+  .aboutMe .profilPhoto {
     left: 7.5%;
   }
-  #skill .skillIcon {
+  .skill .skillIcon {
     display: none;
   }
 }
