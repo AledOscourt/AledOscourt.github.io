@@ -43,22 +43,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="col-md d-flex navbar-nav justify-content-between mx-5 h4 ">
                 <li class="nav-item d-flex col text-center">
-                    <a class="nav-link col" href="#homeOfPage"><i class="bi bi-house-door homeIcon"></i><span class="d-md-none">Accueil</span></a>
+                    <a class="nav-link col" id="homeOfPageNavbar"><i class="bi bi-house-door homeIcon"></i><span class="d-md-none">Accueil</span></a>
                 </li>
                 <li class="nav-item d-flex col text-center">
-                    <a class="nav-link col" href="#aboutMe">Présentation</a>
+                    <a class="nav-link col" id="aboutMeNavbar">Présentation</a>
                 </li>
                 <li class="nav-item d-flex col text-center">
-                    <a class="nav-link col" href="#skill">Compétences</a>
+                    <a class="nav-link col" id="skillNavbar">Compétences</a>
                 </li>
                 <li class="nav-item d-flex col text-center">
-                    <a class="nav-link col" href="#">Parcour</a>
+                    <a class="nav-link col">Parcour</a>
                 </li>
                 <li class="nav-item d-flex col text-center">
-                    <a class="nav-link col" href="#">Réalisation</a>
+                    <a class="nav-link col">Réalisation</a>
                 </li>
                 <li class="nav-item d-flex col text-center">
-                    <a class="nav-link col" href="#">Contact</a>
+                    <a class="nav-link col">Contact</a>
                 </li>
             </ul>
         </div>
@@ -66,11 +66,11 @@
     <!-------------------------------------------------------------------------------------------------------------
     -------------------------------------------- Présentation -----------------------------------------------------
     -------------------------------------------------------------------------------------------------------------->
-    <div class="container my-5 rounded p-3  content" id="aboutMe" data-aos="fade-zoom-in" data-aos-duration="2000">
+    <div class="container my-5 rounded p-md-3 py-3  content" id="aboutMe" data-aos="fade-zoom-in" data-aos-duration="2000">
         <div class="row">
-            <div class="col-md-4 text-center profilPhotoContainer my-auto">
-                <img src="assets/img/avatarPhotoProfil.png" alt="photo-profil" class="rounded img-fluid profilAvatar h-md-100" />
-                <img src="assets/img/photoProfil.jpg" alt="photo-profil" class="rounded img-fluid profilPhoto h-md-100" />
+            <div class="col-lg-4 col-md-10 mx-auto text-center profilPhotoContainer my-auto">
+                <img src="assets/img/avatarPhotoProfil.png" alt="photo-profil" class="rounded img-fluid profilAvatar w-100 h-100" />
+                <img src="assets/img/photoProfil.jpg" alt="photo-profil" class="rounded img-fluid profilPhoto h-100" />
             </div>
             <div class="col text-white text-center">
                 <h3>Présentation</h3>
@@ -93,7 +93,10 @@
             </div>
         </div>
     </div>
-    <div class="container my-5 rounded p-3  content" id="skill" data-aos="fade-zoom-in" data-aos-duration="2000">
+    <!-------------------------------------------------------------------------------------------------------------
+    -------------------------------------------- Skill ------------------------------------------------------------
+    -------------------------------------------------------------------------------------------------------------->
+    <div class="container my-5 rounded p-md-3 py-3  content" id="skill" data-aos="fade-zoom-in" data-aos-duration="2000">
         <div class="row ">
             <h3 class="text-center text-white">Compétences</h3>
             <div class="container my-2 ms-md-5">
@@ -102,10 +105,11 @@
                         <div class="row">
                             <h4 class="text-center my-2 frontEndTitle">Front-End</h4>
                         </div>
-                        <div class="row mx-md-3 mx-1">
-                            <div class="col-md container frontEndbody">
+                        <div class="row mx-lg-3 mx-md-1">
+                            <div class="col-md my-auto container frontEndBody">
+                                <!--*****************************************   Html    ******************************************************-->
                                 <div class="row">
-                                    <h4 class="col-md-4 col">HTML5</h4>
+                                    <h4 class="col-lg-4 col">HTML5</h4>
                                     <div class="d-flex col frontEndIcon">
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
@@ -114,14 +118,71 @@
                                         <i class="bi bi-star"></i>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md container frontEndbody">
+                                <!--*****************************************  CSS   ******************************************************-->
                                 <div class="row">
-                                    <h4 class="col-md-5 col">Bootstrap5</h4>
+                                    <h4 class="col-lg-4 col">CSS3</h4>
+                                    <div class="d-flex col frontEndIcon">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                                <!--*****************************************  SCSS    ******************************************************-->
+                                <div class="row">
+                                    <h4 class="col-lg-4 col">SCSS</h4>
+                                    <div class="d-flex col frontEndIcon">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+
+                                <!--*****************************************  JQuerry    ******************************************************-->
+                                <div class="row">
+                                    <h4 class="col-lg-4 col">JQuerry</h4>
+                                    <div class="d-flex col frontEndIcon">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg my-auto container frontEndBody">
+                                <!--*****************************************   Javascript    ******************************************************-->
+                                <div class="row">
+                                    <h4 class="col-lg-6 text-md-center col">Javascript</h4>
+                                    <div class="d-flex col frontEndIcon">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                                <!--*****************************************   Bootstrap   ******************************************************-->
+                                <div class="row">
+                                    <h4 class="col-lg-6 text-md-center col">Bootstrap5</h4>
                                     <div class="d-flex col frontEndIcon">
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                                <!--*****************************************   Wordpress   ******************************************************-->
+                                <div class="row">
+                                    <h4 class="col-lg-6 text-md-center col">Wordpress</h4>
+                                    <div class="d-flex col frontEndIcon">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
                                         <i class="bi bi-star"></i>
                                         <i class="bi bi-star"></i>
                                     </div>
@@ -131,18 +192,74 @@
                     </div>
                     <i class="bi bi-code-slash ms-5 my-auto col-3 skillIcon frontEndIcon"></i>
                 </div>
-                <div class="row m-5 backEnd">
+                <div class="row m-md-5 m-2 my-3 backEnd">
                     <i class="bi bi-server col-3 my-auto skillIcon backEndIcon"></i>
-                    <div class="col-md-8 content">
-                        <h4 class="text-center my-2 backEndTitle">Back-End</h4>
-                        <div class="col container">
-                            <div class="row"></div>
+                    <div class="col-md-8 content container">
+                        <div class="row">
+                            <h4 class="text-center my-2 backEndTitle">Back-End</h4>
                         </div>
-                        <div class="col container">
-
+                        <div class="row mt-md-4 mx-lg-3 mx-md-1">
+                            <div class="col-md my-auto container backEndBody">
+                                <!--*****************************************  PHP   ******************************************************-->
+                                <div class="row">
+                                    <h4 class="col-lg-4 col">PHP7</h4>
+                                    <div class="d-flex col backEndIcon">
+                                        <i class="bi bi-star-fill "></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                                <!--*****************************************  MYSQL  ******************************************************-->
+                                <div class="row">
+                                    <h4 class="col-lg-4 col">MYSQL</h4>
+                                    <div class="d-flex col backEndIcon">
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                                <!--*****************************************  SEO ******************************************************-->
+                                <div class="row">
+                                    <h4 class="col-lg-4 col">SEO</h4>
+                                    <div class="d-flex col backEndIcon">
+                                        <i class="bi bi-star-fill "></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md my-auto container backEndBody">
+                                <!--*****************************************  Symfony   ******************************************************-->
+                                <div class="row">
+                                    <h4 class="col-lg-7 text-md-center col">Symfony</h4>
+                                    <div class="d-flex col backEndIcon">
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                                <!--*****************************************  Connexion FTP ******************************************************-->
+                                <div class="row">
+                                    <h4 class="col-lg-7 text-md-center col">Connexion FTP</h4>
+                                    <div class="d-flex col backEndIcon">
+                                        <i class="bi bi-star-fill "></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>

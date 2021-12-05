@@ -5,14 +5,18 @@
 /***************************************************************************************
     *************************************** Générale ***************************************
     ***************************************************************************************/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #020402;
   overflow-x: hidden;
 }
 
 .buttonShadowBlue:hover {
-  -webkit-box-shadow: 0px 0px 15px 5px #58A4B0;
-          box-shadow: 0px 0px 15px 5px #58A4B0;
+  -webkit-box-shadow: 0px 0px 5px 1px #020402, 0px 0px 10px 3px #020402, 0px 0px 12px 4px #1ca2f4, 0px 0px 20px 6px #58A4B0;
+          box-shadow: 0px 0px 5px 1px #020402, 0px 0px 10px 3px #020402, 0px 0px 12px 4px #1ca2f4, 0px 0px 20px 6px #58A4B0;
 }
 
 .buttonShadowBlue:focus {
@@ -41,15 +45,30 @@ header .row .headerTitle {
   margin-top: 20vh;
   font-size: 4rem;
   text-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #FFFAFA, 0px 0px 15px #e840ba;
+  z-index: 1;
 }
 
 header .row .headerText {
   font-size: 2rem;
   text-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #FFFAFA, 0px 0px 15px #e840ba;
+  z-index: 1;
 }
 
 header .row .buttonHeader {
   margin-top: 30vh;
+  z-index: 1;
+}
+
+header::after {
+  content: '\A';
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 /***************************************************************************************
@@ -60,6 +79,7 @@ header .row .buttonHeader {
 }
 
 .navbar a {
+  cursor: pointer;
   text-transform: uppercase;
   color: white;
   text-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba;
@@ -67,7 +87,7 @@ header .row .buttonHeader {
 
 .navbar a:hover {
   color: white;
-  text-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 10px #FFFAFA, 0px 0px 20px #e840ba;
+  text-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402, 0px 0px 20px #e840ba;
 }
 
 .navbar a:focus {
@@ -79,8 +99,8 @@ header .row .buttonHeader {
     ***************************************************************************************/
 .content {
   background-image: radial-gradient(circle at center center, rgba(71, 71, 71, 0.47), #080808);
-  -webkit-box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #58A4B0, 0px 0px 10px #FFFAFA, 0px 0px 15px #58A4B0;
-          box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #58A4B0, 0px 0px 10px #FFFAFA, 0px 0px 15px #58A4B0;
+  -webkit-box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #58A4B0, 0px 0px 12px #020402, 0px 0px 15px #FFFAFA, 0px 0px 18px #020402;
+          box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #58A4B0, 0px 0px 12px #020402, 0px 0px 15px #FFFAFA, 0px 0px 18px #020402;
 }
 
 /***************************************************************************************
@@ -121,7 +141,7 @@ header .row .buttonHeader {
   color: #6e41be;
 }
 
-#skill .frontEnd .frontEndbody h4 {
+#skill .frontEnd .frontEndBody h4 {
   color: #FFFAFA;
 }
 
@@ -131,6 +151,10 @@ header .row .buttonHeader {
 
 #skill .backEnd .backEndIcon {
   color: #1ca2f4;
+}
+
+#skill .backEnd .backEndBody h4 {
+  color: #FFFAFA;
 }
 
 @media screen and (max-width: 765px) {
@@ -148,10 +172,6 @@ header .row .buttonHeader {
   }
   .navbar .homeIcon {
     display: none;
-  }
-  #aboutMe .profilAvatar,
-  #aboutMe .profilPhoto {
-    height: 30vh;
   }
   #aboutMe .profilPhoto {
     left: 7.5%;
