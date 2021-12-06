@@ -263,6 +263,113 @@ header::after {
   color: #FFFAFA;
 }
 
+/***************************************************************************************
+**************************************** Timeline ************************************
+***************************************************************************************/
+.timelineContainer {
+  position: relative;
+}
+
+.timelineContainer::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: #FFFAFA;
+  top: 0;
+  bottom: 0;
+  left: 20%;
+  -webkit-box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 4px #020402, 0px 0px 10px #e840ba;
+          box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 4px #020402, 0px 0px 10px #e840ba;
+}
+
+.timelineContainer .leftPart {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  width: 20%;
+  left: 5rem;
+}
+
+.timelineContainer .rightPart {
+  -webkit-box-shadow: 0px 0px 1px #FFFAFA, 0px 0px 3px #e840ba, 0px 0px 7px #FFFAFA, 0px 0px 15px #e840ba, inset 0px 0px 1px #FFFAFA, inset 0px 0px 3px #e840ba, inset 0px 0px 7px #FFFAFA, inset 0px 0px 15px #e840ba;
+          box-shadow: 0px 0px 1px #FFFAFA, 0px 0px 3px #e840ba, 0px 0px 7px #FFFAFA, 0px 0px 15px #e840ba, inset 0px 0px 1px #FFFAFA, inset 0px 0px 3px #e840ba, inset 0px 0px 7px #FFFAFA, inset 0px 0px 15px #e840ba;
+  margin-right: 2.5rem;
+  margin-left: 11%;
+  position: relative;
+  height: 30vh;
+}
+
+.timelineContainer .rightPart .fa-caret-left {
+  position: absolute;
+  aspect-ratio: 1;
+  width: 25px;
+  background-color: #FFFAFA;
+  top: calc(50% - 12.5px);
+  left: -0.8rem;
+  background-color: transparent;
+  text-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 10px #FFFAFA, 0px 0px 15px #e840ba;
+  font-size: 2rem;
+}
+
+.timelineContainer .timelineBadge {
+  z-index: 2;
+  left: calc(20% - 1.525rem);
+  top: calc(15vh - 1rem);
+  background-color: #FFFAFA;
+  border-radius: 50%;
+  width: 2.5rem;
+  aspect-ratio: 1;
+  text-shadow: 0px 0px 2px #FFFAFA, 0px 0px 4px #020402, 0px 0px 10px #e840ba;
+  font-size: 1.5rem;
+  padding: 0;
+  color: #e840ba;
+  -webkit-box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 4px #020402, 0px 0px 10px #e840ba;
+          box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 4px #020402, 0px 0px 10px #e840ba;
+}
+
+.timelineContainer .timelineBadgeAfterMargin {
+  z-index: 2;
+  left: calc(20% - 1.525rem);
+  top: calc(15vh + 0.40vh - 1.075rem);
+  background-color: #FFFAFA;
+  border-radius: 50%;
+  width: 2.5rem;
+  aspect-ratio: 1;
+  text-shadow: 0px 0px 2px #FFFAFA, 0px 0px 4px #020402, 0px 0px 10px #e840ba;
+  font-size: 1.5rem;
+  padding: 0;
+  color: #e840ba;
+  -webkit-box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 4px #020402, 0px 0px 10px #e840ba;
+          box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 4px #020402, 0px 0px 10px #e840ba;
+}
+
+.timelineContainer .timelineBadgeEnd {
+  cursor: pointer;
+  z-index: 2;
+  left: calc(20% - 1.2rem);
+  top: calc(100% - 1.325rem);
+  background-color: #FFFAFA;
+  border-radius: 50%;
+  width: 2.5rem;
+  aspect-ratio: 1;
+  text-shadow: 0px 0px 2px #FFFAFA, 0px 0px 4px #020402, 0px 0px 10px #e840ba;
+  font-size: 1.5rem;
+  padding: 0;
+  color: #e840ba;
+  -webkit-box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 4px #020402, 0px 0px 15px #58A4B0, 0px 0px 20px #e840ba;
+          box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 4px #020402, 0px 0px 15px #58A4B0, 0px 0px 20px #e840ba;
+}
+
+#homeBottomButton {
+  right: 2%;
+  bottom: 4%;
+  font-size: 3rem;
+  cursor: pointer;
+  z-index: 99;
+  text-shadow: 0px 0px 2px #FFFAFA, 0px 0px 4px #020402, 0px 0px 10px #e840ba;
+  color: #FFFAFA;
+}
+
 @media screen and (max-width: 765px) {
   header {
     background-image: url("../img/devenir-developpeur-web-mobile.jpg");
@@ -284,6 +391,11 @@ header::after {
   }
   .skill .skillIcon {
     display: none;
+  }
+  #homeBottomButton {
+    right: 2.5%;
+    bottom: 2.5%;
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

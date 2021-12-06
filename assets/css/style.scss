@@ -1,270 +1,359 @@
-/***************************************************************************************
+    /***************************************************************************************
 *********************************** Variable Générale **********************************
 ***************************************************************************************/
-
-$color-white:#FFFAFA;
-$color-pink:#e840ba;
-$color-blue:#58A4B0;
-$color-black:#020402;
-$color-purple:#6e41be;
-$color-secondBlue:#1ca2f4;
-$text-shadow-pink: 0px 0px 5px $color-pink,
-0px 0px 10px$color-white,
-0px 0px 15px $color-pink;
-
-/***************************************************************************************
+    
+    $color-white:#FFFAFA;
+    $color-pink:#e840ba;
+    $color-blue:#58A4B0;
+    $color-black:#020402;
+    $color-purple:#6e41be;
+    $color-secondBlue:#1ca2f4;
+    $text-shadow-pink: 0px 0px 5px $color-pink,
+    0px 0px 10px$color-white,
+    0px 0px 15px $color-pink;
+    /***************************************************************************************
     *************************************** Générale ***************************************
     ***************************************************************************************/
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    background-color: $color-black;
-    overflow-x: hidden;
-}
-
-.buttonShadowBlue {
-    &:hover {
-        box-shadow: 0px 0px 5px 1px $color-black, 0px 0px 10px 3px $color-black, 0px 0px 12px 4px $color-secondBlue, 0px 0px 20px 6px $color-blue;
+    
+    html {
+        scroll-behavior: smooth;
     }
-    &:focus {
-        box-shadow: none;
+    
+    body {
+        background-color: $color-black;
+        overflow-x: hidden;
+    }
+    
+    .buttonShadowBlue {
         &:hover {
-            box-shadow: 0px 0px 15px 5px $color-blue;
-        }
-    }
-}
-
-
-/***************************************************************************************
-    *************************************** Header *****************************************
-    ***************************************************************************************/
-
-header {
-    height: 100vh;
-    box-shadow: 0px 0px 1px $color-white, 0px 0px 3px $color-pink, 0px 0px 7px $color-white, 0px 0px 15px $color-pink, inset 0px 0px 1px $color-white, inset 0px 0px 3px $color-pink, inset 0px 0px 7px $color-white, inset 0px 0px 15px $color-pink;
-    background-image: url('../img/devenir-developpeur-web-mobile.jpg');
-    background-size: cover;
-    overflow-x: hidden;
-    .row {
-        .headerTitle {
-            margin-top: 20vh;
-            font-size: 4rem;
-            text-shadow: $text-shadow-pink;
-            z-index: 1;
-        }
-        .headerText {
-            font-size: 2rem;
-            text-shadow: $text-shadow-pink;
-            z-index: 1;
-        }
-        .buttonHeader {
-            margin-top: 30vh;
-            z-index: 1;
-        }
-        .chevron {
-            cursor: pointer;
-            z-index: 1;
-            font-size: 2rem;
-            .firstChevron {
-                position: absolute;
-                animation-name: chevroAnimation;
-                animation-duration: 3s;
-                animation-iteration-count: infinite;
-                opacity: 0;
-                left: 49%;
-            }
-            .secondChevron {
-                position: absolute;
-                animation-name: chevroAnimation;
-                animation-duration: 3s;
-                animation-delay: 0.75s;
-                animation-iteration-count: infinite;
-                opacity: 0;
-                left: 49%;
-            }
-            .thirdChevron {
-                position: absolute;
-                animation-name: chevroAnimation;
-                animation-duration: 3s;
-                animation-delay: 1.5s;
-                animation-iteration-count: infinite;
-                opacity: 0;
-                left: 49%;
-            }
-            .forthChevron {
-                position: absolute;
-                animation-name: chevroAnimation;
-                animation-duration: 3s;
-                animation-delay: 2.25s;
-                animation-iteration-count: infinite;
-                opacity: 0;
-                left: 49%;
-            }
-            @keyframes chevroAnimation {
-                from {
-                    top: 83%;
-                    opacity: 0;
-                }
-                50% {
-                    top: 86%;
-                    opacity: 1;
-                }
-                to {
-                    top: 89%;
-                    opacity: 0;
-                }
-            }
-        }
-    }
-    &::after {
-        content: '\A';
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.3);
-        opacity: 1;
-        top: 0;
-        left: 0;
-        z-index: 0;
-    }
-}
-
-
-/***************************************************************************************
-    **************************************** Navbar ****************************************
-    ***************************************************************************************/
-
-.navbar {
-    background-color: rgba(0, 0, 0, 0.2);
-    a {
-        cursor: pointer;
-        text-transform: uppercase;
-        color: white;
-        text-shadow: 0px 0px 2px $color-white, 0px 0px 5px $color-pink;
-        &:hover {
-            color: white;
-            text-shadow: 0px 0px 2px$color-white, 0px 0px 5px $color-pink, 0px 0px 12px $color-black, 0px 0px 20px $color-pink;
+            box-shadow: 0px 0px 5px 1px $color-black, 0px 0px 10px 3px $color-black, 0px 0px 12px 4px $color-secondBlue, 0px 0px 20px 6px $color-blue;
         }
         &:focus {
-            color: white;
-        }
-    }
-}
-
-
-/***************************************************************************************
-    **************************************** Content ****************************************
-    ***************************************************************************************/
-
-.content {
-    background-image: radial-gradient(circle at center center, rgba(71, 71, 71, 0.47), rgb(8, 8, 8));
-    box-shadow: 0px 0px 2px $color-white, 0px 0px 5px $color-blue, 0px 0px 12px $color-black, 0px 0px 15px $color-white, 0px 0px 18px $color-black;
-}
-
-
-/***************************************************************************************
-    **************************************** Présentation **********************************
-    ***************************************************************************************/
-
-.aboutMe {
-    .profilPhotoContainer {
-        position: relative;
-        &:hover .profilPhoto {
-            opacity: 1;
-        }
-    }
-    .profilPhoto {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 7.5%;
-        right: 0;
-        opacity: 0;
-        transition: 1.3s ease;
-    }
-}
-
-
-/***************************************************************************************
-    **************************************** Compétence ************************************
-    ***************************************************************************************/
-
-.skill {
-    overflow: hidden;
-    .skillIcon {
-        font-size: 20vh;
-        text-shadow: 0px 0px 2px $color-white, 0px 0px 5px $color-pink;
-    }
-    .frontEnd {
-        .frontEndTitle {
-            color: $color-purple;
-        }
-        .frontEndIcon {
-            color: $color-purple;
-        }
-        .frontEndBody {
-            h4 {
-                color: $color-white;
+            box-shadow: none;
+            &:hover {
+                box-shadow: 0px 0px 15px 5px $color-blue;
             }
         }
     }
-    .backEnd {
-        .backEndTitle {
-            color: $color-secondBlue;
-        }
-        .backEndIcon {
-            color: $color-secondBlue;
-        }
-        .backEndBody {
-            h4 {
-                color: $color-white;
-            }
-        }
-    }
-    .webDesign {
-        .webDesignTitle {
-            color: $color-pink;
-        }
-        .webDesignIcon {
-            color: $color-pink;
-        }
-        .webDesignBody {
-            h4 {
-                color: $color-white;
-            }
-        }
-    }
-}
-
-@media screen AND(max-width: 765px) {
+    /***************************************************************************************
+    *************************************** Header *****************************************
+    ***************************************************************************************/
+    
     header {
+        height: 100vh;
+        box-shadow: 0px 0px 1px $color-white, 0px 0px 3px $color-pink, 0px 0px 7px $color-white, 0px 0px 15px $color-pink, inset 0px 0px 1px $color-white, inset 0px 0px 3px $color-pink, inset 0px 0px 7px $color-white, inset 0px 0px 15px $color-pink;
         background-image: url('../img/devenir-developpeur-web-mobile.jpg');
+        background-size: cover;
+        overflow-x: hidden;
         .row {
             .headerTitle {
-                font-size: 2.5rem;
+                margin-top: 20vh;
+                font-size: 4rem;
+                text-shadow: $text-shadow-pink;
+                z-index: 1;
             }
             .headerText {
-                font-size: 1rem;
+                font-size: 2rem;
+                text-shadow: $text-shadow-pink;
+                z-index: 1;
+            }
+            .buttonHeader {
+                margin-top: 30vh;
+                z-index: 1;
+            }
+            .chevron {
+                cursor: pointer;
+                z-index: 1;
+                font-size: 2rem;
+                .firstChevron {
+                    position: absolute;
+                    animation-name: chevroAnimation;
+                    animation-duration: 3s;
+                    animation-iteration-count: infinite;
+                    opacity: 0;
+                    left: 49%;
+                }
+                .secondChevron {
+                    position: absolute;
+                    animation-name: chevroAnimation;
+                    animation-duration: 3s;
+                    animation-delay: 0.75s;
+                    animation-iteration-count: infinite;
+                    opacity: 0;
+                    left: 49%;
+                }
+                .thirdChevron {
+                    position: absolute;
+                    animation-name: chevroAnimation;
+                    animation-duration: 3s;
+                    animation-delay: 1.5s;
+                    animation-iteration-count: infinite;
+                    opacity: 0;
+                    left: 49%;
+                }
+                .forthChevron {
+                    position: absolute;
+                    animation-name: chevroAnimation;
+                    animation-duration: 3s;
+                    animation-delay: 2.25s;
+                    animation-iteration-count: infinite;
+                    opacity: 0;
+                    left: 49%;
+                }
+                @keyframes chevroAnimation {
+                    from {
+                        top: 83%;
+                        opacity: 0;
+                    }
+                    50% {
+                        top: 86%;
+                        opacity: 1;
+                    }
+                    to {
+                        top: 89%;
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+        &::after {
+            content: '\A';
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.3);
+            opacity: 1;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+    }
+    /***************************************************************************************
+    **************************************** Navbar ****************************************
+    ***************************************************************************************/
+    
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.2);
+        a {
+            cursor: pointer;
+            text-transform: uppercase;
+            color: white;
+            text-shadow: 0px 0px 2px $color-white, 0px 0px 5px $color-pink;
+            &:hover {
+                color: white;
+                text-shadow: 0px 0px 2px$color-white, 0px 0px 5px $color-pink, 0px 0px 12px $color-black, 0px 0px 20px $color-pink;
+            }
+            &:focus {
+                color: white;
             }
         }
     }
-    .navbar {
-        background-color: rgba(0, 0, 0, 0.7);
-        .homeIcon {
-            display: none;
-        }
+    /***************************************************************************************
+    **************************************** Content ****************************************
+    ***************************************************************************************/
+    
+    .content {
+        background-image: radial-gradient(circle at center center, rgba(71, 71, 71, 0.47), rgb(8, 8, 8));
+        box-shadow: 0px 0px 2px $color-white, 0px 0px 5px $color-blue, 0px 0px 12px $color-black, 0px 0px 15px $color-white, 0px 0px 18px $color-black;
     }
+    /***************************************************************************************
+    **************************************** Présentation **********************************
+    ***************************************************************************************/
+    
     .aboutMe {
+        .profilPhotoContainer {
+            position: relative;
+            &:hover .profilPhoto {
+                opacity: 1;
+            }
+        }
         .profilPhoto {
+            position: absolute;
+            top: 0;
+            bottom: 0;
             left: 7.5%;
+            right: 0;
+            opacity: 0;
+            transition: 1.3s ease;
         }
     }
+    /***************************************************************************************
+    **************************************** Compétence ************************************
+    ***************************************************************************************/
+    
     .skill {
+        overflow: hidden;
         .skillIcon {
-            display: none;
+            font-size: 20vh;
+            text-shadow: 0px 0px 2px $color-white, 0px 0px 5px $color-pink;
+        }
+        .frontEnd {
+            .frontEndTitle {
+                color: $color-purple;
+            }
+            .frontEndIcon {
+                color: $color-purple;
+            }
+            .frontEndBody {
+                h4 {
+                    color: $color-white;
+                }
+            }
+        }
+        .backEnd {
+            .backEndTitle {
+                color: $color-secondBlue;
+            }
+            .backEndIcon {
+                color: $color-secondBlue;
+            }
+            .backEndBody {
+                h4 {
+                    color: $color-white;
+                }
+            }
+        }
+        .webDesign {
+            .webDesignTitle {
+                color: $color-pink;
+            }
+            .webDesignIcon {
+                color: $color-pink;
+            }
+            .webDesignBody {
+                h4 {
+                    color: $color-white;
+                }
+            }
         }
     }
-}
+    /***************************************************************************************
+**************************************** Timeline ************************************
+***************************************************************************************/
+    
+    .timelineContainer {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 3px;
+            background-color: $color-white;
+            top: 0;
+            bottom: 0;
+            left: 20%;
+            box-shadow: 0px 0px 2px $color-white, 0px 0px 4px $color-black, 0px 0px 10px $color-pink;
+        }
+        .leftPart {
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 20px;
+            width: 20%;
+            left: 5rem;
+        }
+        .rightPart {
+            box-shadow: 0px 0px 1px $color-white, 0px 0px 3px $color-pink, 0px 0px 7px $color-white, 0px 0px 15px $color-pink, inset 0px 0px 1px $color-white, inset 0px 0px 3px $color-pink, inset 0px 0px 7px $color-white, inset 0px 0px 15px $color-pink;
+            margin-right: 2.5rem;
+            margin-left: 11%;
+            position: relative;
+            height: 30vh;
+            .fa-caret-left {
+                position: absolute;
+                aspect-ratio: 1;
+                width: 25px;
+                background-color: $color-white;
+                top: calc(50% - 12.5px);
+                left: -0.8rem;
+                background-color: transparent;
+                text-shadow: 0px 0px 2px $color-white, 0px 0px 5px $color-pink, 0px 0px 10px $color-white, 0px 0px 15px $color-pink;
+                font-size: 2rem;
+            }
+        }
+        .timelineBadge {
+            z-index: 2;
+            left: calc(20% - 1.525rem);
+            top: calc(15vh - 1rem);
+            background-color: $color-white;
+            border-radius: 50%;
+            width: 2.5rem;
+            aspect-ratio: 1;
+            text-shadow: 0px 0px 2px $color-white, 0px 0px 4px $color-black, 0px 0px 10px $color-pink;
+            font-size: 1.5rem;
+            padding: 0;
+            color: $color-pink;
+            box-shadow: 0px 0px 2px $color-white, 0px 0px 4px $color-black, 0px 0px 10px $color-pink;
+        }
+        .timelineBadgeAfterMargin {
+            z-index: 2;
+            left: calc(20% - 1.525rem);
+            top: calc(15vh + 0.40vh - 1.075rem);
+            background-color: $color-white;
+            border-radius: 50%;
+            width: 2.5rem;
+            aspect-ratio: 1;
+            text-shadow: 0px 0px 2px $color-white, 0px 0px 4px $color-black, 0px 0px 10px $color-pink;
+            font-size: 1.5rem;
+            padding: 0;
+            color: $color-pink;
+            box-shadow: 0px 0px 2px $color-white, 0px 0px 4px $color-black, 0px 0px 10px $color-pink;
+        }
+        .timelineBadgeEnd {
+            cursor: pointer;
+            z-index: 2;
+            left: calc(20% - 1.2rem);
+            top: calc(100% - 1.325rem);
+            background-color: $color-white;
+            border-radius: 50%;
+            width: 2.5rem;
+            aspect-ratio: 1;
+            text-shadow: 0px 0px 2px $color-white, 0px 0px 4px $color-black, 0px 0px 10px $color-pink;
+            font-size: 1.5rem;
+            padding: 0;
+            color: $color-pink;
+            box-shadow: 0px 0px 2px $color-white, 0px 0px 4px $color-black, 0px 0px 15px $color-blue, 0px 0px 20px $color-pink;
+        }
+    }
+    
+    #homeBottomButton {
+        right: 2%;
+        bottom: 4%;
+        font-size: 3rem;
+        cursor: pointer;
+        z-index: 99;
+        text-shadow: 0px 0px 2px $color-white, 0px 0px 4px $color-black, 0px 0px 10px $color-pink;
+        color: $color-white;
+    }
+    
+    @media screen AND(max-width: 765px) {
+        header {
+            background-image: url('../img/devenir-developpeur-web-mobile.jpg');
+            .row {
+                .headerTitle {
+                    font-size: 2.5rem;
+                }
+                .headerText {
+                    font-size: 1rem;
+                }
+            }
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+            .homeIcon {
+                display: none;
+            }
+        }
+        .aboutMe {
+            .profilPhoto {
+                left: 7.5%;
+            }
+        }
+        .skill {
+            .skillIcon {
+                display: none;
+            }
+        }
+        #homeBottomButton {
+            right: 2.5%;
+            bottom: 2.5%;
+            font-size: 2rem;
+        }
+    }

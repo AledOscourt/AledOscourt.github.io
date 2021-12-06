@@ -12,6 +12,8 @@ let aboutMeNavbar = document.getElementById('aboutMeNavbar');
 let skillNavbar = document.getElementById('skillNavbar');
 let careerNavbar = document.getElementById('careerNavbar');
 let chevronHeader = document.getElementById('chevronHeader');
+let timelineBadgeEnd = document.getElementById('timelineBadgeEnd');
+let homeBottomButton = document.getElementById('homeBottomButton');
 //Empéche la sélection de texte dans le document ainsi que le dblclick
 document.addEventListener('mousedown', function(e) { e.preventDefault(); }, false);
 /****************************************************************************************
@@ -28,7 +30,11 @@ window.onscroll = () => {
         navbar.style.backgroundColor = 'rgba(0,0,0,0.5)';
         navbar.style.boxShadow = 'none';
     }
-
+    if (window.scrollY >= 400) {
+        homeBottomButton.classList.remove('d-none');
+    } else {
+        homeBottomButton.classList.add('d-none');
+    }
 }
 window.onload = () => {
     let typed = new Typed('#formationHeader', {
@@ -56,7 +62,7 @@ skillNavbar.onclick = () => {
 }
 
 careerNavbar.onclick = () => {
-    window.scrollTo(0, 2000);
+    window.scrollTo(0, 2210);
 }
 
 /****************************************************************************************
@@ -65,4 +71,18 @@ careerNavbar.onclick = () => {
 chevronHeader.onclick = () => {
     window.scrollTo(0, 710);
 
+}
+
+/****************************************************************************************
+ **************************************** timeline End Button ****************************
+ ***************************************************************************************/
+timelineBadgeEnd.onclick = () => {
+    window.scrollTo(0, 2210);
+}
+
+/****************************************************************************************
+ **************************************** Home Bottom Button ****************************
+ ***************************************************************************************/
+homeBottomButton.onclick = () => {
+    window.scrollTo(0, 0);
 }
