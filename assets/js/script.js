@@ -2,6 +2,8 @@
  **************************************** AOS INIT **************************************
  ***************************************************************************************/
 AOS.init();
+
+
 /****************************************************************************************
  **************************************** Variable **************************************
  ***************************************************************************************/
@@ -11,6 +13,7 @@ let homeOfPageNavbar = document.getElementById('homeOfPageNavbar');
 let aboutMeNavbar = document.getElementById('aboutMeNavbar');
 let skillNavbar = document.getElementById('skillNavbar');
 let careerNavbar = document.getElementById('careerNavbar');
+let hamburgerNavbarbutton = document.getElementById('hamburgerNavbarbutton');
 let chevronHeader = document.getElementById('chevronHeader');
 let timelineBadgeEnd = document.getElementById('timelineBadgeEnd');
 let homeBottomButton = document.getElementById('homeBottomButton');
@@ -27,7 +30,7 @@ window.onscroll = () => {
         navbar.style.backgroundColor = 'rgba(0,0,0,0.2)';
         navbar.style.boxShadow = 'none';
     } else {
-        navbar.style.backgroundColor = 'rgba(0,0,0,0.5)';
+        navbar.style.backgroundColor = 'rgba(0,0,0,0.6)';
         navbar.style.boxShadow = 'none';
     }
     if (window.scrollY >= 400) {
@@ -54,30 +57,76 @@ homeOfPageNavbar.onclick = () => {
 }
 
 aboutMeNavbar.onclick = () => {
-    window.scrollTo(0, 710);
+    if (window.innerWidth > 765) {
+        window.scrollTo(0, 710);
+    } else {
+        window.scrollTo(0, 620);
+    }
+
 }
 
 skillNavbar.onclick = () => {
-    window.scrollTo(0, 1210);
+    if (window.innerWidth > 765) {
+        window.scrollTo(0, 1210);
+    } else {
+        window.scrollTo(0, 1670);
+    }
 }
 
 careerNavbar.onclick = () => {
-    window.scrollTo(0, 2210);
-}
+        if (window.innerWidth > 765) {
+            window.scrollTo(0, 2210);
+        } else {
+            window.scrollTo(0, 2500);
+        }
 
-/****************************************************************************************
- **************************************** Header chevron onclick ****************************
- ***************************************************************************************/
+    }
+    /****************************************************************************************
+     **************************************** navbar mobile onclick ****************************
+     ***************************************************************************************/
+hamburgerNavbarbutton.onclick = () => {
+        if (window.innerWidth < 756) {
+            //Accueil
+            homeOfPageNavbar.setAttribute('data-bs-toggle', 'collapse');
+            homeOfPageNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
+            //Présentation
+            aboutMeNavbar.setAttribute('data-bs-toggle', 'collapse');
+            aboutMeNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
+            //Compétences
+            skillNavbar.setAttribute('data-bs-toggle', 'collapse');
+            skillNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
+            //Parcours
+            careerNavbar.setAttribute('data-bs-toggle', 'collapse');
+            careerNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
+            /** 
+            *réalisation
+            homeOfPageNavbar.setAttribute('data-bs-toggle', 'collapse');
+            homeOfPageNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
+            *contact
+            homeOfPageNavbar.setAttribute('data-bs-toggle', 'collapse');
+            homeOfPageNavbar.setAttribute('data-bs-target', '#navbarSupportedContent'); */
+        }
+    }
+    /****************************************************************************************
+     **************************************** Header chevron onclick ****************************
+     ***************************************************************************************/
 chevronHeader.onclick = () => {
-    window.scrollTo(0, 710);
-
+    if (window.innerWidth > 765) {
+        window.scrollTo(0, 710);
+    } else {
+        window.scrollTo(0, 620);
+    }
 }
 
 /****************************************************************************************
  **************************************** timeline End Button ****************************
  ***************************************************************************************/
 timelineBadgeEnd.onclick = () => {
-    window.scrollTo(0, 2210);
+    if (window.innerWidth > 765) {
+        window.scrollTo(0, 2210);
+    } else {
+        window.scrollTo(0, 2500);
+    }
 }
 
 /****************************************************************************************

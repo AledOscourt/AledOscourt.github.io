@@ -13,15 +13,16 @@
 </head>
 
 <body>
+
     <!-------------------------------------------------------------------------------------------------------------
     -------------------------------------------- Header -----------------------------------------------------------
     -------------------------------------------------------------------------------------------------------------->
     <header class="container-fluid" id="homeOfPage">
-        <div class="row text-white text-center">
+        <div class="row text-white text-center pe-none">
             <h1 class=" headerTitle animate__animated animate__rubberBand animate__delay-2s animate__slow">Julien Fournier</h1>
         </div>
         <div class="row text-center mt-5">
-            <h2 class="text-white fs-1 headerText">
+            <h2 class="text-white fs-1 headerText pe-none">
                 &nbsp;
                 <span id="formationHeader"> </span> &nbsp;
             </h2>
@@ -44,7 +45,7 @@
     -------------------------------------------- Navbar -----------------------------------------------------------
     -------------------------------------------------------------------------------------------------------------->
     <nav class="navbar navbar-expand-md fixed-top" id="navbar">
-        <button class="navbar-toggler ms-md-0 ms-2 col-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler ms-md-0 ms-2 col-auto" id="hamburgerNavbarbutton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon h-100 text-white"><i class="bi bi-list"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -73,9 +74,9 @@
     <!-------------------------------------------------------------------------------------------------------------
     -------------------------------------------- Présentation -----------------------------------------------------
     -------------------------------------------------------------------------------------------------------------->
-    <div class="container my-5 rounded p-md-3 py-3 content aboutMe" data-aos="fade-zoom-in" data-aos-duration="2000">
+    <div class="container my-5 rounded p-md-3 py-3 content aboutMe pe-none" data-aos="fade-zoom-in" data-aos-duration="2000">
         <div class="row">
-            <div class="col-lg-4 col-md-10 mx-auto text-center profilPhotoContainer my-auto">
+            <div class="col-lg-4 col-md-10 mx-auto text-center profilPhotoContainer my-auto pe-auto">
                 <img src="assets/img/avatarPhotoProfil.png" alt="photo-profil" class="rounded img-fluid profilAvatar w-100 h-100" />
                 <img src="assets/img/photoProfil.jpg" alt="photo-profil" class="rounded img-fluid profilPhoto h-100" />
             </div>
@@ -92,7 +93,7 @@
                         Perfectionniste et curieux par nature, je chercherai à optimiser ainsi qu'améliorer du mieux que je puisse pour le client. Je travaille très bien seul qu'en groupe, même si aux tentances timide et introvertie, cela peu parfois ralentir l'intégration.
                     </p>
                 </div>
-                <a class="btn btn-outline-light col-md-3  mt-5 col-8 buttonShadowBlue fs-5">
+                <a class="btn btn-outline-light col-md-3  mt-5 col-8 buttonShadowBlue fs-5 pe-auto">
                     Me contacter
                </a>
             </div>
@@ -101,7 +102,7 @@
     <!-------------------------------------------------------------------------------------------------------------
     -------------------------------------------- Skill ------------------------------------------------------------
     -------------------------------------------------------------------------------------------------------------->
-    <div class="container my-5 rounded p-md-3 py-3 content skill" data-aos="fade-zoom-in" data-aos-duration="2000">
+    <div class="container my-5 rounded p-md-3 py-3 content skill pe-none" data-aos="fade-zoom-in" data-aos-duration="2000">
         <div class="row ">
             <h3 class="text-center text-white">Compétences</h3>
             <div class="container my-2 ms-md-5">
@@ -321,7 +322,7 @@
     <!-------------------------------------------------------------------------------------------------------------
     -------------------------------------------- Career ------------------------------------------------------------
     -------------------------------------------------------------------------------------------------------------->
-    <div class="container my-5 rounded p-md-3 py-3 content career">
+    <div class="container my-5 rounded p-md-3 py-3 content career pe-none">
         <div class="row">
             <h3 class="text-center text-white">Parcours</h3>
         </div>
@@ -340,7 +341,24 @@
                             <h5 class="col-xl-9 col-7 me-xl-0 me-5">Développeur Web et Web Mobile (Bac + 2 - Niveau 5)</h5>
                             <small class="ms-xl-0 ms-5 col-3"><i class="bi bi-geo-alt-fill"></i>&nbsp; La Manu, Noyon | en cours</small>
                         </div>
-
+                        <div class="row m-3">
+                            <p class="col">Lors de cette formation, j'ai appris l'utilisation de :</p>
+                            <ul class="col d-flex">
+                                <div class="col">
+                                    <li> HTML 5</li>
+                                    <li> CSS 3</li>
+                                    <li> Javascript</li>
+                                    <li> PHP</li>
+                                </div>
+                                <div class="col">
+                                    <li> My SQL</li>
+                                    <li> Symphony</li>
+                                    <li> JQUERRY</li>
+                                    <li> SCSS</li>
+                                </div>
+                            </ul>
+                            <p>J'ai aussiutilisé des outils tel que : Bootstrap 5, Workpress, Adobe XD et FileZilla.</p>
+                        </div>
                     </div>
                     <div class="my-auto position-absolute timelineBadge d-flex">
                         <i class="fas fa-graduation-cap mx-auto my-auto"></i>
@@ -359,7 +377,10 @@
                             <h5 class="col-9">DUT Génie Electriques et Informatique Industrielle</h5>
                             <small class="ms-xl-0 ms-1 col"><i class="bi bi-geo-alt-fill"></i>&nbsp; IUT de l'Ainse | non obtenu</small>
                         </div>
-
+                        <div class="row m-5">
+                            <p>Au sein de cette établissement, j'ai approfondis mes connaissances scientifiques, j'ai appris à manipulé l'électricité, j'ai réalisé des systèmes électroniques, ainsi que réalisé des projets de réalisation: tel qu'une application
+                                de covoiturage et des boites électriques.</p>
+                        </div>
                     </div>
                     <div class="my-auto position-absolute timelineBadgeAfterMargin d-flex">
                         <i class="fas fa-graduation-cap mx-auto my-auto"></i>
@@ -378,16 +399,80 @@
                             <h5 class="col-8">Bac Scientifique</h5>
                             <small class="ms-xl-0 ms-1 col"><i class="bi bi-geo-alt-fill"></i>&nbsp; Lycée Jean Calvin, NOYON | obtenu</small>
                         </div>
-
+                        <div class="row m-5">
+                            <p>Au lycée, j'ai suivi une formation pour un baccalauréat scientifique en spécialité Sciencesde l'Ingénieur, avec une option en Numérique et Systèmes Informatiques.</p>
+                        </div>
                     </div>
                     <div class="my-auto position-absolute timelineBadgeAfterMargin d-flex">
                         <i class="fas fa-graduation-cap mx-auto my-auto"></i>
                     </div>
                 </div>
                 <!-----------------------       timeline end button            ----------------------->
-                <a class="my-auto position-absolute timelineBadgeEnd d-flex text-decoration-none" id="timelineBadgeEnd">
-                    <i class="fas fa-caret-up m-auto"></i>
+                <a class="my-auto position-absolute timelineBadgeEnd d-flex text-decoration-none pe-auto" id="timelineBadgeEnd">
+                    <i class="bi bi-caret-up-fill m-auto"></i>
                 </a>
+            </div>
+        </div>
+        <!-------------------------------------------------------------------------------------------------------------
+        -------------------------------------------- Career Responsive ------------------------------------------------
+        -------------------------------------------------------------------------------------------------------------->
+        <div class="row d-md-none pe-none">
+            <div class="container">
+                <div class="row my-2 content">
+                    <div class="container text-white" data-aos="flip-right">
+                        <div class="row text-center mt-2">
+                            <h5>Développeur Web et Web Mobile (Bac + 2 - Niveau 5)</h5>
+                        </div>
+                        <div class="row mt-2 mx-2">
+                            <small><i class="bi bi-geo-alt-fill"></i>&nbsp; La Manu, Noyon | en cours</small>
+                        </div>
+                        <div class="row m-3">
+                            <p class="col-md">Lors de cette formation, j'ai appris l'utilisation de :</p>
+                            <ul class="col-md ms-3 d-flex">
+                                <div class="col">
+                                    <li> HTML 5</li>
+                                    <li> CSS 3</li>
+                                    <li> Javascript</li>
+                                    <li> PHP</li>
+                                </div>
+                                <div class="col">
+                                    <li> My SQL</li>
+                                    <li> Symphony</li>
+                                    <li> JQUERRY</li>
+                                    <li> SCSS</li>
+                                </div>
+                            </ul>
+                            <p>J'ai aussiutilisé des outils tel que : Bootstrap 5, Workpress, Adobe XD et FileZilla.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-2 content">
+                    <div class="container text-white" data-aos="flip-right">
+                        <div class="row text-center mt-2">
+                            <h5>DUT Génie Electriques et Informatique Industrielle</h5>
+                        </div>
+                        <div class="row mt-2 mx-2">
+                            <small><i class="bi bi-geo-alt-fill"></i>&nbsp; IUT de l'Ainse | non obtenu</small>
+                        </div>
+                        <div class="row m-3">
+                            <p>Au lycée, j'ai suivi une formation pour un baccalauréat scientifique en spécialité Sciencesde l'Ingénieur, avec une option en Numérique et Systèmes Informatiques.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-2 content">
+                    <div class="container text-white" data-aos="flip-right">
+                        <div class="row text-center mt-2">
+                            <h5>Bac Scientifique</h5>
+                        </div>
+                        <div class="row mt-2 mx-2">
+                            <small><i class="bi bi-geo-alt-fill"></i>&nbsp; Lycée Jean Calvin, NOYON | obtenu</small>
+                        </div>
+                        <div class="row m-3">
+                            <p>Au lycée, j'ai suivi une formation pour un baccalauréat scientifique en spécialité Sciencesde l'Ingénieur, avec une option en Numérique et Systèmes Informatiques.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -396,11 +481,84 @@
     <!-------------------------------------------------------------------------------------------------------------
     -------------------------------------------- Portfolio ------------------------------------------------------------
     -------------------------------------------------------------------------------------------------------------->
-    <div class="container my-5 rounded p-md-3 py-3 content Portfolio">
-        <div class="row">
-            <h3 class="text-center text-white">Réalisations</h3>
+    <div class="container my-5  p-md-3 py-3 content portfolio">
+        <div class="row pe-none">
+            <h3 class="text-center text-white ">Réalisations</h3>
+        </div>
+        <div class="row my-3 gap-5">
+            <div class="col-md-5 text-center container portfolioProjectContainer  rounded">
+                <div class="row portfolioProject">
+                    <div class="container">
+                        <div class="row portfolioProjectIllustration">
+                        </div>
+                        <div class="row portfolioProjectDescription">
+                            <div class="container">
+                                <div class="row portfolioProjectDescriptionTitle pe-none">
+                                    <h5 class="my-md-2 text-white">La Manu Voyage</h5>
+                                </div>
+                                <div class="row portfolioProjectDescriptionBody pe-auto mx-md-1">
+                                    <p class=" text-white ">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut dictum nisl, non malesuada diam. Nunc et augue rhoncus urna pulvinar malesuada. Aenean efficitur fringilla justo, ac accumsan diam semper sit amet. Nullam condimentum gravida mattis.
+                                        Fusce at porta mauris, ac scelerisque orci. Sed cursus sagittis placerat. Nullam finibus, tellus et dapibus dignissim, turpis augue venenatis sapien, a suscipit libero elit vel magna. Mauris sit amet massa ornare,
+                                        vestibulum erat vel, varius dui. Vivamus venenatis enim nec tortor congue, ac convallis nunc finibus. Cras efficitur eleifend mi a porta. Vivamus pulvinar posuere lorem at luctus.
+                                    </p>
+                                    <p class=" text-white ">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut dictum nisl, non malesuada diam. Nunc et augue rhoncus urna pulvinar malesuada. Aenean efficitur fringilla justo, ac accumsan diam semper sit amet. Nullam condimentum gravida mattis.
+                                        Fusce at porta mauris, ac scelerisque orci. Sed cursus sagittis placerat. Nullam finibus, tellus et dapibus dignissim, turpis augue venenatis sapien, a suscipit libero elit vel magna. Mauris sit amet massa ornare,
+                                        vestibulum erat vel, varius dui. Vivamus venenatis enim nec tortor congue, ac convallis nunc finibus. Cras efficitur eleifend mi a porta. Vivamus pulvinar posuere lorem at luctus.
+                                    </p>
+                                </div>
+                                <div class="portfolioProjectDescriptionFooter my-3">
+                                    <button class="col-md-5 col-7 btn btn-outline-info pe-auto">Voir le site</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 text-center container portfolioProjectContainer  rounded">
+                <div class="row portfolioProject">
+                    <div class="container">
+                        <div class="row portfolioProjectIllustration">
+                        </div>
+                        <div class="row portfolioProjectDescription">
+                            <div class="container">
+                                <div class="row portfolioProjectDescriptionTitle pe-none">
+                                    <h5 class="my-md-2 text-white">La Manu Voyage</h5>
+                                </div>
+                                <div class="row portfolioProjectDescriptionBody pe-auto mx-md-1">
+                                    <p class=" text-white ">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut dictum nisl, non malesuada diam. Nunc et augue rhoncus urna pulvinar malesuada. Aenean efficitur fringilla justo, ac accumsan diam semper sit amet. Nullam condimentum gravida mattis.
+                                        Fusce at porta mauris, ac scelerisque orci. Sed cursus sagittis placerat. Nullam finibus, tellus et dapibus dignissim, turpis augue venenatis sapien, a suscipit libero elit vel magna. Mauris sit amet massa ornare,
+                                        vestibulum erat vel, varius dui. Vivamus venenatis enim nec tortor congue, ac convallis nunc finibus. Cras efficitur eleifend mi a porta. Vivamus pulvinar posuere lorem at luctus.
+                                    </p>
+                                    <p class=" text-white ">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut dictum nisl, non malesuada diam. Nunc et augue rhoncus urna pulvinar malesuada. Aenean efficitur fringilla justo, ac accumsan diam semper sit amet. Nullam condimentum gravida mattis.
+                                        Fusce at porta mauris, ac scelerisque orci. Sed cursus sagittis placerat. Nullam finibus, tellus et dapibus dignissim, turpis augue venenatis sapien, a suscipit libero elit vel magna. Mauris sit amet massa ornare,
+                                        vestibulum erat vel, varius dui. Vivamus venenatis enim nec tortor congue, ac convallis nunc finibus. Cras efficitur eleifend mi a porta. Vivamus pulvinar posuere lorem at luctus.
+                                    </p>
+                                </div>
+                                <div class="portfolioProjectDescriptionFooter my-3">
+                                    <button class="col-md-5 col-7 btn btn-outline-info pe-auto">Voir le site</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <!-------------------------------------------------------------------------------------------------------------
+    -------------------------------------------- Contact ------------------------------------------------------------
+    -------------------------------------------------------------------------------------------------------------->
+    <div class="container my-5 rounded p-md-3 py-3 content contact">
+        <div class="row">
+            <h3 class="text-center text-white">Contact</h3>
+        </div>
+    </div>
+    <!-------------------------------------------------------------------------------------------------------------
+    -------------------------------------------- Footer ------------------------------------------------------------
+    -------------------------------------------------------------------------------------------------------------->
 
     <i class="fas fa-arrow-circle-up position-fixed d-none" id="homeBottomButton"></i>
 
@@ -411,5 +569,7 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/typed.min.js"></script>
 </body>
+
+</html>
 
 </html>

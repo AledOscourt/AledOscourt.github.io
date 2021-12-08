@@ -29,6 +29,15 @@ body {
           box-shadow: 0px 0px 15px 5px #58A4B0;
 }
 
+#homeBottomButton {
+  right: 2%;
+  bottom: 4%;
+  font-size: 3rem;
+  cursor: pointer;
+  z-index: 99;
+  color: #FFFAFA;
+}
+
 /***************************************************************************************
     *************************************** Header *****************************************
     ***************************************************************************************/
@@ -63,74 +72,81 @@ header .row .chevron {
   cursor: pointer;
   z-index: 1;
   font-size: 2rem;
+  text-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #FFFAFA, 0px 0px 15px #e840ba;
 }
 
 header .row .chevron .firstChevron {
   position: absolute;
   -webkit-animation-name: chevroAnimation;
           animation-name: chevroAnimation;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   opacity: 0;
-  left: 49%;
 }
 
 header .row .chevron .secondChevron {
   position: absolute;
   -webkit-animation-name: chevroAnimation;
           animation-name: chevroAnimation;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-delay: 0.75s;
-          animation-delay: 0.75s;
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   opacity: 0;
-  left: 49%;
 }
 
 header .row .chevron .thirdChevron {
   position: absolute;
   -webkit-animation-name: chevroAnimation;
           animation-name: chevroAnimation;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   opacity: 0;
-  left: 49%;
 }
 
 header .row .chevron .forthChevron {
   position: absolute;
   -webkit-animation-name: chevroAnimation;
           animation-name: chevroAnimation;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-delay: 2.25s;
-          animation-delay: 2.25s;
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   opacity: 0;
-  left: 49%;
 }
 
 @-webkit-keyframes chevroAnimation {
   from {
     top: 83%;
     opacity: 0;
+    left: calc(50% - 1rem);
+  }
+  25% {
+    top: 84.5%;
+    opacity: 0.5;
   }
   50% {
     top: 86%;
     opacity: 1;
   }
+  75% {
+    top: 87.5%;
+    opacity: 0.5;
+  }
   to {
     top: 89%;
     opacity: 0;
+    left: calc(50% - 1rem);
   }
 }
 
@@ -138,14 +154,24 @@ header .row .chevron .forthChevron {
   from {
     top: 83%;
     opacity: 0;
+    left: calc(50% - 1rem);
+  }
+  25% {
+    top: 84.5%;
+    opacity: 0.5;
   }
   50% {
     top: 86%;
     opacity: 1;
   }
+  75% {
+    top: 87.5%;
+    opacity: 0.5;
+  }
   to {
     top: 89%;
     opacity: 0;
+    left: calc(50% - 1rem);
   }
 }
 
@@ -291,8 +317,8 @@ header::after {
 }
 
 .timelineContainer .rightPart {
-  -webkit-box-shadow: 0px 0px 1px #FFFAFA, 0px 0px 3px #e840ba, 0px 0px 7px #FFFAFA, 0px 0px 15px #e840ba, inset 0px 0px 1px #FFFAFA, inset 0px 0px 3px #e840ba, inset 0px 0px 7px #FFFAFA, inset 0px 0px 15px #e840ba;
-          box-shadow: 0px 0px 1px #FFFAFA, 0px 0px 3px #e840ba, 0px 0px 7px #FFFAFA, 0px 0px 15px #e840ba, inset 0px 0px 1px #FFFAFA, inset 0px 0px 3px #e840ba, inset 0px 0px 7px #FFFAFA, inset 0px 0px 15px #e840ba;
+  -webkit-box-shadow: 0px 0px 1px #FFFAFA, 0px 0px 3px #58A4B0, 0px 0px 5px #FFFAFA, 0px 0px 10px #58A4B0;
+          box-shadow: 0px 0px 1px #FFFAFA, 0px 0px 3px #58A4B0, 0px 0px 5px #FFFAFA, 0px 0px 10px #58A4B0;
   margin-right: 2.5rem;
   margin-left: 11%;
   position: relative;
@@ -303,11 +329,9 @@ header::after {
   position: absolute;
   aspect-ratio: 1;
   width: 25px;
-  background-color: #FFFAFA;
   top: calc(50% - 12.5px);
-  left: -0.8rem;
-  background-color: transparent;
-  text-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 10px #FFFAFA, 0px 0px 15px #e840ba;
+  left: -0.7rem;
+  text-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #58A4B0, 0px 0px 10px #FFFAFA, 0px 0px 15px #58A4B0;
   font-size: 2rem;
 }
 
@@ -319,7 +343,6 @@ header::after {
   border-radius: 50%;
   width: 2.5rem;
   aspect-ratio: 1;
-  text-shadow: 0px 0px 2px #FFFAFA, 0px 0px 4px #020402, 0px 0px 10px #e840ba;
   font-size: 1.5rem;
   padding: 0;
   color: #e840ba;
@@ -335,7 +358,6 @@ header::after {
   border-radius: 50%;
   width: 2.5rem;
   aspect-ratio: 1;
-  text-shadow: 0px 0px 2px #FFFAFA, 0px 0px 4px #020402, 0px 0px 10px #e840ba;
   font-size: 1.5rem;
   padding: 0;
   color: #e840ba;
@@ -352,7 +374,6 @@ header::after {
   border-radius: 50%;
   width: 2.5rem;
   aspect-ratio: 1;
-  text-shadow: 0px 0px 2px #FFFAFA, 0px 0px 4px #020402, 0px 0px 10px #e840ba;
   font-size: 1.5rem;
   padding: 0;
   color: #e840ba;
@@ -360,14 +381,63 @@ header::after {
           box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 4px #020402, 0px 0px 15px #58A4B0, 0px 0px 20px #e840ba;
 }
 
-#homeBottomButton {
-  right: 2%;
-  bottom: 4%;
-  font-size: 3rem;
-  cursor: pointer;
-  z-index: 99;
-  text-shadow: 0px 0px 2px #FFFAFA, 0px 0px 4px #020402, 0px 0px 10px #e840ba;
-  color: #FFFAFA;
+/***************************************************************************************
+**************************************** Portfolio *************************************
+***************************************************************************************/
+.portfolio .portfolioProjectContainer {
+  position: relative;
+  height: 50vh;
+  -webkit-box-shadow: 0px 0px 1px #FFFAFA, 0px 0px 3px #e840ba, 0px 0px 7px #FFFAFA, 0px 0px 15px #e840ba;
+          box-shadow: 0px 0px 1px #FFFAFA, 0px 0px 3px #e840ba, 0px 0px 7px #FFFAFA, 0px 0px 15px #e840ba;
+}
+
+.portfolio .portfolioProjectContainer .portfolioProject {
+  background-image: radial-gradient(circle at center center, rgba(71, 71, 71, 0.47), #080808);
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.portfolio .portfolioProjectContainer .portfolioProject .portfolioProjectIllustration {
+  background-image: url("../img/devenir-developpeur-web-mobile.jpg");
+  background-size: cover;
+  height: 42.5vh;
+  border-bottom-left-radius: 4%;
+  border-bottom-right-radius: 4%;
+  -webkit-transition: 1.3s ease;
+  transition: 1.3s ease;
+}
+
+.portfolio .portfolioProjectContainer .portfolioProject .portfolioProjectDescription {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 7.5vh;
+  -webkit-transition: 1.3s ease;
+  transition: 1.3s ease;
+}
+
+.portfolio .portfolioProjectContainer .portfolioProject .portfolioProjectDescription .portfolioProjectDescriptionBody {
+  opacity: 0;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  height: 35vh;
+  overflow-y: scroll;
+}
+
+.portfolio .portfolioProjectContainer:hover .portfolioProjectIllustration {
+  opacity: 0;
+  height: 0vh;
+}
+
+.portfolio .portfolioProjectContainer:hover .portfolioProjectDescription {
+  height: 50vh;
+}
+
+.portfolio .portfolioProjectContainer:hover .portfolioProjectDescription .portfolioProjectDescriptionBody {
+  opacity: 1;
+  -webkit-transition: 0.8s ease 0.8s;
+  transition: 0.8s ease 0.8s;
 }
 
 @media screen and (max-width: 765px) {
@@ -393,9 +463,55 @@ header::after {
     display: none;
   }
   #homeBottomButton {
-    right: 2.5%;
+    right: calc(50% - 1.5rem);
     bottom: 2.5%;
     font-size: 2rem;
+  }
+  .portfolio .portfolioProjectContainer {
+    position: relative;
+    height: 50vh;
+  }
+  .portfolio .portfolioProjectContainer .portfolioProject {
+    background-image: radial-gradient(circle at center center, rgba(71, 71, 71, 0.47), #080808);
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+  }
+  .portfolio .portfolioProjectContainer .portfolioProject .portfolioProjectIllustration {
+    background-image: url("../img/devenir-developpeur-web-mobile.jpg");
+    background-size: cover;
+    height: 42.5vh;
+    border-bottom-left-radius: 4%;
+    border-bottom-right-radius: 4%;
+    -webkit-transition: 1.3s ease;
+    transition: 1.3s ease;
+  }
+  .portfolio .portfolioProjectContainer .portfolioProject .portfolioProjectDescription {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 7.5vh;
+    -webkit-transition: 1.3s ease;
+    transition: 1.3s ease;
+  }
+  .portfolio .portfolioProjectContainer .portfolioProject .portfolioProjectDescription .portfolioProjectDescriptionBody {
+    opacity: 0;
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
+    font-size: 0.75rem;
+    overflow-y: scroll;
+  }
+  .portfolio .portfolioProjectContainer:hover .portfolioProjectIllustration {
+    opacity: 0;
+    height: 0vh;
+  }
+  .portfolio .portfolioProjectContainer:hover .portfolioProjectDescription {
+    height: 50vh;
+  }
+  .portfolio .portfolioProjectContainer:hover .portfolioProjectDescription .portfolioProjectDescriptionBody {
+    opacity: 1;
+    -webkit-transition: 0.8s ease 0.8s;
+    transition: 0.8s ease 0.8s;
   }
 }
 /*# sourceMappingURL=style.css.map */
