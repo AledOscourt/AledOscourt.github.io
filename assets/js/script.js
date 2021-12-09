@@ -77,7 +77,7 @@ skillNavbar.onclick = () => {
 
 careerNavbar.onclick = () => {
     if (window.innerWidth > 765) {
-        window.scrollTo(0, 2210);
+        window.scrollTo(0, 2010);
     } else {
         window.scrollTo(0, 2500);
     }
@@ -94,33 +94,54 @@ PortfolioNavbar.onclick = () => {
     /****************************************************************************************
      **************************************** navbar mobile onclick ****************************
      ***************************************************************************************/
-hamburgerNavbarbutton.onclick = () => {
-        if (window.innerWidth < 756) {
-            //Accueil
-            homeOfPageNavbar.setAttribute('data-bs-toggle', 'collapse');
-            homeOfPageNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
-            //Présentation
-            aboutMeNavbar.setAttribute('data-bs-toggle', 'collapse');
-            aboutMeNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
-            //Compétences
-            skillNavbar.setAttribute('data-bs-toggle', 'collapse');
-            skillNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
-            //Parcours
-            careerNavbar.setAttribute('data-bs-toggle', 'collapse');
-            careerNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
+window.onmouseover = () => {
+    if (window.innerWidth < 756) {
+        //Accueil
+        homeOfPageNavbar.setAttribute('data-bs-toggle', 'collapse');
+        homeOfPageNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
+        //Présentation
+        aboutMeNavbar.setAttribute('data-bs-toggle', 'collapse');
+        aboutMeNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
+        //Compétences
+        skillNavbar.setAttribute('data-bs-toggle', 'collapse');
+        skillNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
+        //Parcours
+        careerNavbar.setAttribute('data-bs-toggle', 'collapse');
+        careerNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
 
-            //réalisation
-            PortfolioNavbar.setAttribute('data-bs-toggle', 'collapse');
-            PortfolioNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
-            /** 
-            *contact
-            homeOfPageNavbar.setAttribute('data-bs-toggle', 'collapse');
-            homeOfPageNavbar.setAttribute('data-bs-target', '#navbarSupportedContent'); */
-        }
+        //réalisation
+        PortfolioNavbar.setAttribute('data-bs-toggle', 'collapse');
+        PortfolioNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
+        /** 
+        *contact
+        homeOfPageNavbar.setAttribute('data-bs-toggle', 'collapse');
+        homeOfPageNavbar.setAttribute('data-bs-target', '#navbarSupportedContent'); */
+    } else {
+        homeOfPageNavbar.removeAttribute('data-bs-toggle');
+        homeOfPageNavbar.removeAttribute('data-bs-target');
+        //Présentation
+        aboutMeNavbar.removeAttribute('data-bs-toggle');
+        aboutMeNavbar.removeAttribute('data-bs-target');
+        //Compétences
+        skillNavbar.removeAttribute('data-bs-toggle');
+        skillNavbar.setAttriburemoveAttributete('data-bs-target');
+        //Parcours
+        careerNavbar.removeAttribute('data-bs-toggle');
+        careerNavbar.removeAttribute('data-bs-target');
+
+        //réalisation
+        PortfolioNavbar.removeAttribute('data-bs-toggle');
+        PortfolioNavbar.removeAttribute('data-bs-target');
+        /** 
+        *contact
+        homeOfPageNavbar.removeAttribute('data-bs-toggle', 'collapse');
+        homeOfPageNavbar.removeAttribute('data-bs-target', '#navbarSupportedContent'); */
     }
-    /****************************************************************************************
-     **************************************** Header chevron onclick ****************************
-     ***************************************************************************************/
+}
+
+/****************************************************************************************
+ **************************************** Header chevron onclick ****************************
+ ***************************************************************************************/
 chevronHeader.onclick = () => {
     if (window.innerWidth > 765) {
         window.scrollTo(0, 710);
@@ -134,9 +155,9 @@ chevronHeader.onclick = () => {
  ***************************************************************************************/
 timelineBadgeEnd.onclick = () => {
     if (window.innerWidth > 765) {
-        window.scrollTo(0, 2210);
+        window.scrollTo(0, 2010);
     } else {
-        window.scrollTo(0, 2500);
+        window.scrollTo(0, 2480);
     }
 }
 
