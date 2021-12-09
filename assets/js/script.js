@@ -87,14 +87,14 @@ PortfolioNavbar.onclick = () => {
         if (window.innerWidth > 765) {
             window.scrollTo(0, 3420);
         } else {
-            window.scrollTo(0, 3550);
+            window.scrollTo(0, 3400);
         }
 
     }
     /****************************************************************************************
      **************************************** navbar mobile onclick ****************************
      ***************************************************************************************/
-window.onmouseover = () => {
+hamburgerNavbarbutton.onclick = () => {
     if (window.innerWidth < 756) {
         //Accueil
         homeOfPageNavbar.setAttribute('data-bs-toggle', 'collapse');
@@ -116,26 +116,6 @@ window.onmouseover = () => {
         *contact
         homeOfPageNavbar.setAttribute('data-bs-toggle', 'collapse');
         homeOfPageNavbar.setAttribute('data-bs-target', '#navbarSupportedContent'); */
-    } else {
-        homeOfPageNavbar.removeAttribute('data-bs-toggle');
-        homeOfPageNavbar.removeAttribute('data-bs-target');
-        //Présentation
-        aboutMeNavbar.removeAttribute('data-bs-toggle');
-        aboutMeNavbar.removeAttribute('data-bs-target');
-        //Compétences
-        skillNavbar.removeAttribute('data-bs-toggle');
-        skillNavbar.setAttriburemoveAttributete('data-bs-target');
-        //Parcours
-        careerNavbar.removeAttribute('data-bs-toggle');
-        careerNavbar.removeAttribute('data-bs-target');
-
-        //réalisation
-        PortfolioNavbar.removeAttribute('data-bs-toggle');
-        PortfolioNavbar.removeAttribute('data-bs-target');
-        /** 
-        *contact
-        homeOfPageNavbar.removeAttribute('data-bs-toggle', 'collapse');
-        homeOfPageNavbar.removeAttribute('data-bs-target', '#navbarSupportedContent'); */
     }
 }
 
@@ -157,7 +137,7 @@ timelineBadgeEnd.onclick = () => {
     if (window.innerWidth > 765) {
         window.scrollTo(0, 2010);
     } else {
-        window.scrollTo(0, 2480);
+        window.scrollTo(0, 2400);
     }
 }
 

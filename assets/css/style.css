@@ -14,6 +14,10 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .buttonShadowBlue:hover {
   -webkit-box-shadow: 0px 0px 5px 1px #020402, 0px 0px 10px 3px #020402, 0px 0px 12px 4px #1ca2f4, 0px 0px 20px 6px #58A4B0;
           box-shadow: 0px 0px 5px 1px #020402, 0px 0px 10px 3px #020402, 0px 0px 12px 4px #1ca2f4, 0px 0px 20px 6px #58A4B0;
@@ -127,24 +131,24 @@ header .row .chevron .forthChevron {
 
 @-webkit-keyframes chevroAnimation {
   from {
-    top: 83%;
+    top: 85%;
     opacity: 0;
     left: calc(50% - 1rem);
   }
   25% {
-    top: 84.5%;
+    top: 86.5%;
     opacity: 0.5;
   }
   50% {
-    top: 86%;
+    top: 88%;
     opacity: 1;
   }
   75% {
-    top: 87.5%;
+    top: 89.5%;
     opacity: 0.5;
   }
   to {
-    top: 89%;
+    top: 91%;
     opacity: 0;
     left: calc(50% - 1rem);
   }
@@ -152,24 +156,24 @@ header .row .chevron .forthChevron {
 
 @keyframes chevroAnimation {
   from {
-    top: 83%;
+    top: 85%;
     opacity: 0;
     left: calc(50% - 1rem);
   }
   25% {
-    top: 84.5%;
+    top: 86.5%;
     opacity: 0.5;
   }
   50% {
-    top: 86%;
+    top: 88%;
     opacity: 1;
   }
   75% {
-    top: 87.5%;
+    top: 89.5%;
     opacity: 0.5;
   }
   to {
-    top: 89%;
+    top: 91%;
     opacity: 0;
     left: calc(50% - 1rem);
   }
@@ -417,12 +421,29 @@ header::after {
   transition: 1.3s ease;
 }
 
+.portfolio .portfolioProjectContainer .portfolioProject .portfolioProjectDescription .portfolioProjectDescriptionTitle {
+  margin-top: 2vh;
+}
+
 .portfolio .portfolioProjectContainer .portfolioProject .portfolioProjectDescription .portfolioProjectDescriptionBody {
   opacity: 0;
-  -webkit-transition: 0.6s ease;
-  transition: 0.6s ease;
-  height: 35vh;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  height: 32.5vh;
   overflow-y: scroll;
+}
+
+.portfolio .portfolioProjectContainer .portfolioProject .portfolioProjectDescription .portfolioProjectDescriptionBody::-webkit-scrollbar {
+  width: 6px;
+}
+
+.portfolio .portfolioProjectContainer .portfolioProject .portfolioProjectDescription .portfolioProjectDescriptionBody::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.portfolio .portfolioProjectContainer .portfolioProject .portfolioProjectDescription .portfolioProjectDescriptionBody::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #FFFAFA;
 }
 
 .portfolio .portfolioProjectContainer:hover .portfolioProjectIllustration {
@@ -432,6 +453,10 @@ header::after {
 
 .portfolio .portfolioProjectContainer:hover .portfolioProjectDescription {
   height: 50vh;
+}
+
+.portfolio .portfolioProjectContainer:hover .portfolioProjectDescription .portfolioProjectDescriptionTitle {
+  margin-top: 1vh;
 }
 
 .portfolio .portfolioProjectContainer:hover .portfolioProjectDescription .portfolioProjectDescriptionBody {
@@ -494,6 +519,9 @@ header::after {
     -webkit-transition: 1.3s ease;
     transition: 1.3s ease;
   }
+  .portfolio .portfolioProjectContainer .portfolioProject .portfolioProjectDescription .portfolioProjectDescriptionTitle {
+    margin-top: 0.5vh;
+  }
   .portfolio .portfolioProjectContainer .portfolioProject .portfolioProjectDescription .portfolioProjectDescriptionBody {
     opacity: 0;
     -webkit-transition: 0.6s ease;
@@ -508,6 +536,9 @@ header::after {
   }
   .portfolio .portfolioProjectContainer:hover .portfolioProjectDescription {
     height: 50vh;
+  }
+  .portfolio .portfolioProjectContainer:hover .portfolioProjectDescription .portfolioProjectDescriptionTitle {
+    margin-top: 0vh;
   }
   .portfolio .portfolioProjectContainer:hover .portfolioProjectDescription .portfolioProjectDescriptionBody {
     opacity: 1;

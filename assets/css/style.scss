@@ -23,6 +23,9 @@ html {
 body {
     background-color: $color-black;
     overflow-x: hidden;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 .buttonShadowBlue {
@@ -112,24 +115,24 @@ header {
             }
             @keyframes chevroAnimation {
                 from {
-                    top: 83%;
+                    top: 85%;
                     opacity: 0;
                     left: calc(50% - 1rem);
                 }
                 25% {
-                    top: 84.5%;
+                    top: 86.5%;
                     opacity: 0.5;
                 }
                 50% {
-                    top: 86%;
+                    top: 88%;
                     opacity: 1;
                 }
                 75% {
-                    top: 87.5%;
+                    top: 89.5%;
                     opacity: 0.5;
                 }
                 to {
-                    top: 89%;
+                    top: 91%;
                     opacity: 0;
                     left: calc(50% - 1rem);
                 }
@@ -367,11 +370,24 @@ header {
                 width: 100%;
                 height: 7.5vh;
                 transition: 1.3s ease;
+                .portfolioProjectDescriptionTitle {
+                    margin-top: 2vh;
+                }
                 .portfolioProjectDescriptionBody {
                     opacity: 0;
-                    transition: 0.6s ease;
-                    height: 35vh;
+                    transition: 0.8s ease;
+                    height: 32.5vh;
                     overflow-y: scroll;
+                    &::-webkit-scrollbar {
+                        width: 6px;
+                    }
+                    &::-webkit-scrollbar-track {
+                        background-color: rgba(0, 0, 0, 0);
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        border-radius: 20px;
+                        background-color: $color-white;
+                    }
                 }
             }
         }
@@ -382,6 +398,9 @@ header {
             }
             .portfolioProjectDescription {
                 height: 50vh;
+                .portfolioProjectDescriptionTitle {
+                    margin-top: 1vh;
+                }
                 .portfolioProjectDescriptionBody {
                     opacity: 1;
                     transition: 0.8s ease 0.8s;
@@ -447,6 +466,9 @@ header {
                     width: 100%;
                     height: 5vh;
                     transition: 1.3s ease;
+                    .portfolioProjectDescriptionTitle {
+                        margin-top: 0.5vh;
+                    }
                     .portfolioProjectDescriptionBody {
                         opacity: 0;
                         transition: 0.6s ease;
@@ -463,6 +485,9 @@ header {
                 }
                 .portfolioProjectDescription {
                     height: 50vh;
+                    .portfolioProjectDescriptionTitle {
+                        margin-top: 0vh;
+                    }
                     .portfolioProjectDescriptionBody {
                         opacity: 1;
                         transition: 0.8s ease 0.8s;
