@@ -31,7 +31,7 @@ window.onscroll = () => {
         navbar.style.backgroundColor = 'rgba(0,0,0,0.2)';
         navbar.style.boxShadow = 'none';
     } else {
-        navbar.style.backgroundColor = 'rgba(0,0,0,0.7)';
+        navbar.style.backgroundColor = 'rgba(0,0,0,0.8)';
         navbar.style.boxShadow = 'none';
     }
     if (window.scrollY >= 400) {
