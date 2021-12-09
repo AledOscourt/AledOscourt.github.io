@@ -13,6 +13,7 @@ let homeOfPageNavbar = document.getElementById('homeOfPageNavbar');
 let aboutMeNavbar = document.getElementById('aboutMeNavbar');
 let skillNavbar = document.getElementById('skillNavbar');
 let careerNavbar = document.getElementById('careerNavbar');
+let PortfolioNavbar = document.getElementById('PortfolioNavbar');
 let hamburgerNavbarbutton = document.getElementById('hamburgerNavbarbutton');
 let chevronHeader = document.getElementById('chevronHeader');
 let timelineBadgeEnd = document.getElementById('timelineBadgeEnd');
@@ -39,6 +40,7 @@ window.onscroll = () => {
         homeBottomButton.classList.add('d-none');
     }
 }
+
 window.onload = () => {
     let typed = new Typed('#formationHeader', {
         strings: [, 'DÉVELOPPEUR WEB^1500', 'FULL STACK JUNIOR^1500'],
@@ -74,10 +76,18 @@ skillNavbar.onclick = () => {
 }
 
 careerNavbar.onclick = () => {
+    if (window.innerWidth > 765) {
+        window.scrollTo(0, 2210);
+    } else {
+        window.scrollTo(0, 2500);
+    }
+
+}
+PortfolioNavbar.onclick = () => {
         if (window.innerWidth > 765) {
-            window.scrollTo(0, 2210);
+            window.scrollTo(0, 3420);
         } else {
-            window.scrollTo(0, 2500);
+            window.scrollTo(0, 3550);
         }
 
     }
@@ -98,10 +108,11 @@ hamburgerNavbarbutton.onclick = () => {
             //Parcours
             careerNavbar.setAttribute('data-bs-toggle', 'collapse');
             careerNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
+
+            //réalisation
+            PortfolioNavbar.setAttribute('data-bs-toggle', 'collapse');
+            PortfolioNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
             /** 
-            *réalisation
-            homeOfPageNavbar.setAttribute('data-bs-toggle', 'collapse');
-            homeOfPageNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
             *contact
             homeOfPageNavbar.setAttribute('data-bs-toggle', 'collapse');
             homeOfPageNavbar.setAttribute('data-bs-target', '#navbarSupportedContent'); */
