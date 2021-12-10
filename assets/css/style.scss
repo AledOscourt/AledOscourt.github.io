@@ -431,6 +431,9 @@ header {
 ***************************************************************************************/
 
 .contact {
+    .contacctTitle {
+        font-size: 2.5rem;
+    }
     .iconContactTitlePhone {
         text-shadow: $text-shadow-purple;
     }
@@ -569,6 +572,9 @@ header {
         }
     }
     .contact {
+        .iconContactTitle {
+            font-size: 5.5rem;
+        }
         .iconContact {
             font-size: 4.5rem;
         }

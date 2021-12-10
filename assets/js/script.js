@@ -83,7 +83,7 @@ careerNavbar.onclick = () => {
     if (window.innerWidth > 765) {
         window.scrollTo(0, 2050);
     } else {
-        window.scrollTo(0, 2500);
+        window.scrollTo(0, 2480);
     }
 
 }
@@ -91,7 +91,7 @@ portfolioNavbar.onclick = () => {
     if (window.innerWidth > 765) {
         window.scrollTo(0, 3180);
     } else {
-        window.scrollTo(0, 3400);
+        window.scrollTo(0, 3340);
     }
 }
 contactNavbar.onclick = () => {
