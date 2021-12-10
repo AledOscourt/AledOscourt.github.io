@@ -11,6 +11,12 @@ $color-secondBlue:#1ca2f4;
 $text-shadow-pink: 0px 0px 5px $color-pink,
 0px 0px 10px$color-white,
 0px 0px 15px $color-pink;
+$text-shadow-purple: 0px 0px 5px $color-purple,
+0px 0px 10px$color-white,
+0px 0px 15px $color-purple;
+$text-shadow-blue: 0px 0px 5px $color-blue,
+0px 0px 10px$color-white,
+0px 0px 15px $color-blue;
 
 /***************************************************************************************
     *************************************** Générale ***************************************
@@ -48,6 +54,10 @@ body {
     cursor: pointer;
     z-index: 99;
     color: $color-white;
+}
+
+.backPortfolio {
+    text-shadow: $text-shadow-purple;
 }
 
 
@@ -357,12 +367,16 @@ header {
             height: 50vh;
             overflow: hidden;
             .portfolioProjectIllustration {
-                background-image: url('../img/devenir-developpeur-web-mobile.jpg');
-                background-size: cover;
+                position: relative;
                 height: 42.5vh;
                 border-bottom-left-radius: 4%;
                 border-bottom-right-radius: 4%;
                 transition: 1.3s ease;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    padding: 0px;
+                }
             }
             .portfolioProjectDescription {
                 content: ' ';
@@ -374,6 +388,7 @@ header {
                     margin-top: 2vh;
                 }
                 .portfolioProjectDescriptionBody {
+                    cursor: default;
                     opacity: 0;
                     transition: 0.8s ease;
                     height: 32.5vh;
@@ -407,6 +422,39 @@ header {
                 }
             }
         }
+    }
+}
+
+
+/***************************************************************************************
+**************************************** Contact *************************************
+***************************************************************************************/
+
+.contact {
+    .iconContactTitlePhone {
+        text-shadow: $text-shadow-purple;
+    }
+    .iconContactTitleMail {
+        text-shadow: $text-shadow-blue;
+    }
+    .iconContactTitle {
+        font-size: 7rem;
+    }
+    .iconContact {
+        font-size: 6rem;
+        text-shadow: $text-shadow-pink;
+    }
+    .textContactPhone {
+        color: $color-purple;
+        font-size: 2rem;
+    }
+    .textContactMail {
+        color: $color-blue;
+        font-size: 1.5rem;
+    }
+    .textContact {
+        color: $color-pink;
+        font-size: 2rem;
     }
 }
 
@@ -518,6 +566,20 @@ header {
             top: 92%;
             opacity: 0;
             left: calc(50% - 1rem);
+        }
+    }
+    .contact {
+        .iconContact {
+            font-size: 4.5rem;
+        }
+        .textContactPhone {
+            font-size: 1.25rem;
+        }
+        .textContactMail {
+            font-size: 1.25rem;
+        }
+        .textContact {
+            font-size: 2rem;
         }
     }
 }

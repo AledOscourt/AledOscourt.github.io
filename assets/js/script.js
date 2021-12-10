@@ -7,14 +7,19 @@ AOS.init();
 /****************************************************************************************
  **************************************** Variable **************************************
  ***************************************************************************************/
+/*-----------------------------variable navbar-----------------------------*/
+
 let navbar = document.getElementById('navbar');
 let navbarNeon = document.getElementById('navbarNeon');
 let homeOfPageNavbar = document.getElementById('homeOfPageNavbar');
 let aboutMeNavbar = document.getElementById('aboutMeNavbar');
 let skillNavbar = document.getElementById('skillNavbar');
 let careerNavbar = document.getElementById('careerNavbar');
-let PortfolioNavbar = document.getElementById('PortfolioNavbar');
+let portfolioNavbar = document.getElementById('portfolioNavbar');
+let contactNavbar = document.getElementById('contactNavbar');
 let hamburgerNavbarbutton = document.getElementById('hamburgerNavbarbutton');
+/*-----------------------------variable other-----------------------------*/
+let aboutMeContact = document.getElementById('aboutMeContact');
 let chevronHeader = document.getElementById('chevronHeader');
 let timelineBadgeEnd = document.getElementById('timelineBadgeEnd');
 let homeBottomButton = document.getElementById('homeBottomButton');
@@ -64,7 +69,6 @@ aboutMeNavbar.onclick = () => {
     } else {
         window.scrollTo(0, 620);
     }
-
 }
 
 skillNavbar.onclick = () => {
@@ -77,23 +81,30 @@ skillNavbar.onclick = () => {
 
 careerNavbar.onclick = () => {
     if (window.innerWidth > 765) {
-        window.scrollTo(0, 2010);
+        window.scrollTo(0, 2050);
     } else {
         window.scrollTo(0, 2500);
     }
 
 }
-PortfolioNavbar.onclick = () => {
-        if (window.innerWidth > 765) {
-            window.scrollTo(0, 3420);
-        } else {
-            window.scrollTo(0, 3400);
-        }
-
+portfolioNavbar.onclick = () => {
+    if (window.innerWidth > 765) {
+        window.scrollTo(0, 3180);
+    } else {
+        window.scrollTo(0, 3400);
     }
-    /****************************************************************************************
-     **************************************** navbar mobile onclick ****************************
-     ***************************************************************************************/
+}
+contactNavbar.onclick = () => {
+    if (window.innerWidth > 765) {
+        window.scrollTo(0, 3400);
+    } else {
+        window.scrollTo(0, 4200);
+    }
+}
+
+/****************************************************************************************
+ **************************************** navbar mobile onclick ****************************
+ ***************************************************************************************/
 hamburgerNavbarbutton.onclick = () => {
     if (window.innerWidth < 756) {
         //Accueil
@@ -110,29 +121,37 @@ hamburgerNavbarbutton.onclick = () => {
         careerNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
 
         //réalisation
-        PortfolioNavbar.setAttribute('data-bs-toggle', 'collapse');
-        PortfolioNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
-        /** 
-        *contact
-        homeOfPageNavbar.setAttribute('data-bs-toggle', 'collapse');
-        homeOfPageNavbar.setAttribute('data-bs-target', '#navbarSupportedContent'); */
+        portfolioNavbar.setAttribute('data-bs-toggle', 'collapse');
+        portfolioNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
+        //contact
+        contactNavbar.setAttribute('data-bs-toggle', 'collapse');
+        contactNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
     }
 }
 
 /****************************************************************************************
- **************************************** Header chevron onclick ****************************
+ **************************************** Header chevron onclick ************************
  ***************************************************************************************/
 chevronHeader.onclick = () => {
-    if (window.innerWidth > 765) {
-        window.scrollTo(0, 710);
-    } else {
-        window.scrollTo(0, 620);
+        if (window.innerWidth > 765) {
+            window.scrollTo(0, 710);
+        } else {
+            window.scrollTo(0, 620);
+        }
     }
-}
-
-/****************************************************************************************
- **************************************** timeline End Button ****************************
- ***************************************************************************************/
+    /****************************************************************************************
+     **************************************** Header chevron onclick ************************
+     ***************************************************************************************/
+aboutMeContact.onclick = () => {
+        if (window.innerWidth > 765) {
+            window.scrollTo(0, 3400);
+        } else {
+            window.scrollTo(0, 3600);
+        }
+    }
+    /****************************************************************************************
+     **************************************** timeline End Button ****************************
+     ***************************************************************************************/
 timelineBadgeEnd.onclick = () => {
     if (window.innerWidth > 765) {
         window.scrollTo(0, 2010);

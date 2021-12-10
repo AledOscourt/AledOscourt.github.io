@@ -42,6 +42,10 @@ body::-webkit-scrollbar {
   color: #FFFAFA;
 }
 
+.backPortfolio {
+  text-shadow: 0px 0px 5px #6e41be, 0px 0px 10px #FFFAFA, 0px 0px 15px #6e41be;
+}
+
 /***************************************************************************************
     *************************************** Header *****************************************
     ***************************************************************************************/
@@ -403,13 +407,18 @@ header::after {
 }
 
 .portfolio .portfolioProjectContainer .portfolioProject .portfolioProjectIllustration {
-  background-image: url("../img/devenir-developpeur-web-mobile.jpg");
-  background-size: cover;
+  position: relative;
   height: 42.5vh;
   border-bottom-left-radius: 4%;
   border-bottom-right-radius: 4%;
   -webkit-transition: 1.3s ease;
   transition: 1.3s ease;
+}
+
+.portfolio .portfolioProjectContainer .portfolioProject .portfolioProjectIllustration img {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
 }
 
 .portfolio .portfolioProjectContainer .portfolioProject .portfolioProjectDescription {
@@ -426,6 +435,7 @@ header::after {
 }
 
 .portfolio .portfolioProjectContainer .portfolioProject .portfolioProjectDescription .portfolioProjectDescriptionBody {
+  cursor: default;
   opacity: 0;
   -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
@@ -463,6 +473,41 @@ header::after {
   opacity: 1;
   -webkit-transition: 0.8s ease 0.8s;
   transition: 0.8s ease 0.8s;
+}
+
+/***************************************************************************************
+**************************************** Contact *************************************
+***************************************************************************************/
+.contact .iconContactTitlePhone {
+  text-shadow: 0px 0px 5px #6e41be, 0px 0px 10px #FFFAFA, 0px 0px 15px #6e41be;
+}
+
+.contact .iconContactTitleMail {
+  text-shadow: 0px 0px 5px #58A4B0, 0px 0px 10px #FFFAFA, 0px 0px 15px #58A4B0;
+}
+
+.contact .iconContactTitle {
+  font-size: 7rem;
+}
+
+.contact .iconContact {
+  font-size: 6rem;
+  text-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #FFFAFA, 0px 0px 15px #e840ba;
+}
+
+.contact .textContactPhone {
+  color: #6e41be;
+  font-size: 2rem;
+}
+
+.contact .textContactMail {
+  color: #58A4B0;
+  font-size: 1.5rem;
+}
+
+.contact .textContact {
+  color: #e840ba;
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 765px) {
@@ -592,6 +637,18 @@ header::after {
       opacity: 0;
       left: calc(50% - 1rem);
     }
+  }
+  .contact .iconContact {
+    font-size: 4.5rem;
+  }
+  .contact .textContactPhone {
+    font-size: 1.25rem;
+  }
+  .contact .textContactMail {
+    font-size: 1.25rem;
+  }
+  .contact .textContact {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
