@@ -12,10 +12,23 @@ html {
 body {
   background-color: #020402;
   overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
 }
 
 body::-webkit-scrollbar {
   display: none;
+}
+
+/***************************************************************************************
+**************************************** Titre de section  ****************************/
+.title {
+  font-family: 'Lora', serif;
+}
+
+/***************************************************************************************
+**************************************** Box shadow sur les button  ****************************/
+.buttonShadowBlue {
+  font-family: 'Roboto', sans-serif;
 }
 
 .buttonShadowBlue:hover {
@@ -33,6 +46,8 @@ body::-webkit-scrollbar {
           box-shadow: 0px 0px 15px 5px #58A4B0;
 }
 
+/***************************************************************************************
+**************************************** Button back sur le portfolio ****************************/
 #homeBottomButton {
   right: 2%;
   bottom: 4%;
@@ -42,6 +57,8 @@ body::-webkit-scrollbar {
   color: #FFFAFA;
 }
 
+/***************************************************************************************
+**************************************** Fléche pour accueil ****************************/
 .backPortfolio {
   text-shadow: 0px 0px 5px #6e41be, 0px 0px 10px #FFFAFA, 0px 0px 15px #6e41be;
 }
@@ -63,12 +80,14 @@ header .row .headerTitle {
   font-size: 4rem;
   text-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #FFFAFA, 0px 0px 15px #e840ba;
   z-index: 1;
+  font-family: 'Lora', serif;
 }
 
 header .row .headerText {
   font-size: 2rem;
   text-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #FFFAFA, 0px 0px 15px #e840ba;
   z-index: 1;
+  font-family: 'Lora', serif;
 }
 
 header .row .buttonHeader {
@@ -188,8 +207,8 @@ header::after {
   position: absolute;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.3);
-  opacity: 1;
+  background-color: #020402;
+  opacity: 0.3;
   top: 0;
   left: 0;
   z-index: 0;
@@ -205,17 +224,90 @@ header::after {
 .navbar a {
   cursor: pointer;
   text-transform: uppercase;
-  color: white;
+  color: #FFFAFA;
   text-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba;
+  font-family: 'Roboto', sans-serif;
 }
 
 .navbar a:hover {
-  color: white;
+  color: #FFFAFA;
   text-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402, 0px 0px 20px #e840ba;
 }
 
 .navbar a:focus {
-  color: white;
+  color: #FFFAFA;
+}
+
+.navbar #homeOfPageNavbar:hover::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 0.5px;
+  -webkit-box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402;
+          box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402;
+  background-color: #e840ba;
+  margin-top: 5px;
+  margin-left: calc(50% - 10px);
+}
+
+.navbar #aboutMeNavbar:hover::after {
+  content: '';
+  display: block;
+  width: 125px;
+  height: 0.5px;
+  -webkit-box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402;
+          box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402;
+  background-color: #e840ba;
+  margin-top: 5px;
+  margin-left: calc(50% - 62.5px);
+}
+
+.navbar #skillNavbar:hover::after {
+  content: '';
+  display: block;
+  width: 115px;
+  height: 0.5px;
+  -webkit-box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402;
+          box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402;
+  background-color: #e840ba;
+  margin-top: 5px;
+  margin-left: calc(50% - 57.5px);
+}
+
+.navbar #careerNavbar:hover::after {
+  content: '';
+  display: block;
+  width: 85px;
+  height: 0.5px;
+  -webkit-box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402;
+          box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402;
+  background-color: #e840ba;
+  margin-top: 5px;
+  margin-left: calc(50% - 42.5px);
+}
+
+.navbar #portfolioNavbar:hover::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 0.5px;
+  -webkit-box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402;
+          box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402;
+  background-color: #e840ba;
+  margin-top: 5px;
+  margin-left: calc(50% - 50px);
+}
+
+.navbar #contactNavbar:hover::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 0.5px;
+  -webkit-box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402;
+          box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402;
+  background-color: #e840ba;
+  margin-top: 5px;
+  margin-left: calc(50% - 35px);
 }
 
 /***************************************************************************************
@@ -515,6 +607,9 @@ header::after {
 }
 
 @media screen and (max-width: 765px) {
+  /***************************************************************************************
+**************************************** Header ************************************
+***************************************************************************************/
   header {
     background-image: url("../img/devenir-developpeur-web-mobile.jpg");
   }
@@ -524,23 +619,96 @@ header::after {
   header .row .headerText {
     font-size: 1rem;
   }
+  @-webkit-keyframes chevroAnimation {
+    from {
+      top: 86%;
+      opacity: 0;
+      left: calc(50% - 1rem);
+    }
+    25% {
+      top: 87.5%;
+      opacity: 0.5;
+    }
+    50% {
+      top: 89%;
+      opacity: 1;
+    }
+    75% {
+      top: 90.5%;
+      opacity: 0.5;
+    }
+    to {
+      top: 92%;
+      opacity: 0;
+      left: calc(50% - 1rem);
+    }
+  }
+  @keyframes chevroAnimation {
+    from {
+      top: 86%;
+      opacity: 0;
+      left: calc(50% - 1rem);
+    }
+    25% {
+      top: 87.5%;
+      opacity: 0.5;
+    }
+    50% {
+      top: 89%;
+      opacity: 1;
+    }
+    75% {
+      top: 90.5%;
+      opacity: 0.5;
+    }
+    to {
+      top: 92%;
+      opacity: 0;
+      left: calc(50% - 1rem);
+    }
+  }
+  /***************************************************************************************
+**************************************** Navbar ************************************
+***************************************************************************************/
   .navbar {
     background-color: rgba(0, 0, 0, 0.8);
   }
   .navbar .homeIcon {
     display: none;
   }
+  .navbar #homeOfPageNavbar:hover::after {
+    display: none;
+  }
+  .navbar #aboutMeNavbar:hover::after {
+    display: none;
+  }
+  .navbar #skillNavbar:hover::after {
+    display: none;
+  }
+  .navbar #careerNavbar:hover::after {
+    display: none;
+  }
+  .navbar #portfolioNavbar:hover::after {
+    display: none;
+  }
+  .navbar #contactNavbar:hover::after {
+    display: none;
+  }
+  /***************************************************************************************
+**************************************** Présentation ************************************
+***************************************************************************************/
   .aboutMe .profilPhoto {
     left: 7.5%;
   }
+  /***************************************************************************************
+**************************************** Skill ************************************
+***************************************************************************************/
   .skill .skillIcon {
     display: none;
   }
-  #homeBottomButton {
-    right: calc(50% - 1.5rem);
-    bottom: 2.5%;
-    font-size: 2rem;
-  }
+  /***************************************************************************************
+**************************************** Portfolio ************************************
+***************************************************************************************/
   .portfolio .portfolioProjectContainer {
     position: relative;
     height: 50vh;
@@ -594,54 +762,9 @@ header::after {
     -webkit-transition: 0.8s ease 0.8s;
     transition: 0.8s ease 0.8s;
   }
-  @-webkit-keyframes chevroAnimation {
-    from {
-      top: 86%;
-      opacity: 0;
-      left: calc(50% - 1rem);
-    }
-    25% {
-      top: 87.5%;
-      opacity: 0.5;
-    }
-    50% {
-      top: 89%;
-      opacity: 1;
-    }
-    75% {
-      top: 90.5%;
-      opacity: 0.5;
-    }
-    to {
-      top: 92%;
-      opacity: 0;
-      left: calc(50% - 1rem);
-    }
-  }
-  @keyframes chevroAnimation {
-    from {
-      top: 86%;
-      opacity: 0;
-      left: calc(50% - 1rem);
-    }
-    25% {
-      top: 87.5%;
-      opacity: 0.5;
-    }
-    50% {
-      top: 89%;
-      opacity: 1;
-    }
-    75% {
-      top: 90.5%;
-      opacity: 0.5;
-    }
-    to {
-      top: 92%;
-      opacity: 0;
-      left: calc(50% - 1rem);
-    }
-  }
+  /***************************************************************************************
+**************************************** Contact ************************************
+***************************************************************************************/
   .contact .iconContactTitle {
     font-size: 5.5rem;
   }
@@ -655,6 +778,14 @@ header::after {
     font-size: 1.25rem;
   }
   .contact .textContact {
+    font-size: 2rem;
+  }
+  /***************************************************************************************
+**************************************** Fléche pour accueil ************************************
+***************************************************************************************/
+  #homeBottomButton {
+    right: calc(50% - 1.5rem);
+    bottom: 2.5%;
     font-size: 2rem;
   }
 }
