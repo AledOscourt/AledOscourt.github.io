@@ -47,6 +47,14 @@ body::-webkit-scrollbar {
 }
 
 /***************************************************************************************
+**************************************** Content  ****************************/
+.content {
+  background-image: radial-gradient(circle at center center, rgba(71, 71, 71, 0.47), #080808);
+  -webkit-box-shadow: 0px 0px 5px #58A4B0, 0px 0px 10px #020402, 0px 0px 15px #58A4B0, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
+          box-shadow: 0px 0px 5px #58A4B0, 0px 0px 10px #020402, 0px 0px 15px #58A4B0, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
+}
+
+/***************************************************************************************
 **************************************** Button back sur le portfolio ****************************/
 #homeBottomButton {
   right: 2%;
@@ -60,7 +68,11 @@ body::-webkit-scrollbar {
 /***************************************************************************************
 **************************************** Fléche pour accueil ****************************/
 .backPortfolio {
-  text-shadow: 0px 0px 5px #6e41be, 0px 0px 10px #FFFAFA, 0px 0px 15px #6e41be;
+  text-shadow: 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
+}
+
+.backPortfolio:hover {
+  text-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be, 0px 0px 5px #58A4B0, 0px 0px 10px #020402, 0px 0px 15px #58A4B0;
 }
 
 /***************************************************************************************
@@ -68,8 +80,8 @@ body::-webkit-scrollbar {
     ***************************************************************************************/
 header {
   height: 100vh;
-  -webkit-box-shadow: 0px 0px 1px #FFFAFA, 0px 0px 3px #e840ba, 0px 0px 7px #FFFAFA, 0px 0px 15px #e840ba, inset 0px 0px 1px #FFFAFA, inset 0px 0px 3px #e840ba, inset 0px 0px 7px #FFFAFA, inset 0px 0px 15px #e840ba;
-          box-shadow: 0px 0px 1px #FFFAFA, 0px 0px 3px #e840ba, 0px 0px 7px #FFFAFA, 0px 0px 15px #e840ba, inset 0px 0px 1px #FFFAFA, inset 0px 0px 3px #e840ba, inset 0px 0px 7px #FFFAFA, inset 0px 0px 15px #e840ba;
+  -webkit-box-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be, 0px 0px 5px #58A4B0, 0px 0px 10px #020402, 0px 0px 15px #58A4B0, inset 0px 0px 5px #e840ba, inset 0px 0px 10px #020402, inset 0px 0px 15px #e840ba, inset 0px 0px 5px #6e41be, inset 0px 0px 10px #020402, inset 0px 0px 15px #6e41be, inset 0px 0px 5px #58A4B0, inset 0px 0px 10px #020402, inset 0px 0px 15px #58A4B0;
+          box-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be, 0px 0px 5px #58A4B0, 0px 0px 10px #020402, 0px 0px 15px #58A4B0, inset 0px 0px 5px #e840ba, inset 0px 0px 10px #020402, inset 0px 0px 15px #e840ba, inset 0px 0px 5px #6e41be, inset 0px 0px 10px #020402, inset 0px 0px 15px #6e41be, inset 0px 0px 5px #58A4B0, inset 0px 0px 10px #020402, inset 0px 0px 15px #58A4B0;
   background-image: url("../img/devenir-developpeur-web-mobile.jpg");
   background-size: cover;
   overflow-x: hidden;
@@ -78,14 +90,14 @@ header {
 header .row .headerTitle {
   margin-top: 20vh;
   font-size: 4rem;
-  text-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #FFFAFA, 0px 0px 15px #e840ba;
+  text-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
   z-index: 1;
   font-family: 'Lora', serif;
 }
 
 header .row .headerText {
   font-size: 2rem;
-  text-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #FFFAFA, 0px 0px 15px #e840ba;
+  text-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
   z-index: 1;
   font-family: 'Lora', serif;
 }
@@ -99,7 +111,7 @@ header .row .chevron {
   cursor: pointer;
   z-index: 1;
   font-size: 2rem;
-  text-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #FFFAFA, 0px 0px 15px #e840ba;
+  text-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
 }
 
 header .row .chevron .firstChevron {
@@ -225,13 +237,13 @@ header::after {
   cursor: pointer;
   text-transform: uppercase;
   color: #FFFAFA;
-  text-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba;
+  text-shadow: 0px 0px 3px #e840ba, 0px 0px 5px #58A4B0, 0px 0px 10px #6e41be, 0px 0px 15px #e840ba;
   font-family: 'Roboto', sans-serif;
 }
 
 .navbar a:hover {
   color: #FFFAFA;
-  text-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402, 0px 0px 20px #e840ba;
+  text-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
 }
 
 .navbar a:focus {
@@ -243,8 +255,8 @@ header::after {
   display: block;
   width: 20px;
   height: 0.5px;
-  -webkit-box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402;
-          box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402;
+  -webkit-box-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
+          box-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
   background-color: #e840ba;
   margin-top: 5px;
   margin-left: calc(50% - 10px);
@@ -255,8 +267,8 @@ header::after {
   display: block;
   width: 125px;
   height: 0.5px;
-  -webkit-box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402;
-          box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402;
+  -webkit-box-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
+          box-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
   background-color: #e840ba;
   margin-top: 5px;
   margin-left: calc(50% - 62.5px);
@@ -267,8 +279,8 @@ header::after {
   display: block;
   width: 115px;
   height: 0.5px;
-  -webkit-box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402;
-          box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402;
+  -webkit-box-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
+          box-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
   background-color: #e840ba;
   margin-top: 5px;
   margin-left: calc(50% - 57.5px);
@@ -279,8 +291,8 @@ header::after {
   display: block;
   width: 85px;
   height: 0.5px;
-  -webkit-box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402;
-          box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402;
+  -webkit-box-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
+          box-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
   background-color: #e840ba;
   margin-top: 5px;
   margin-left: calc(50% - 42.5px);
@@ -291,8 +303,8 @@ header::after {
   display: block;
   width: 100px;
   height: 0.5px;
-  -webkit-box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402;
-          box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402;
+  -webkit-box-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
+          box-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
   background-color: #e840ba;
   margin-top: 5px;
   margin-left: calc(50% - 50px);
@@ -303,20 +315,11 @@ header::after {
   display: block;
   width: 70px;
   height: 0.5px;
-  -webkit-box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402;
-          box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402;
+  -webkit-box-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
+          box-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
   background-color: #e840ba;
   margin-top: 5px;
   margin-left: calc(50% - 35px);
-}
-
-/***************************************************************************************
-    **************************************** Content ****************************************
-    ***************************************************************************************/
-.content {
-  background-image: radial-gradient(circle at center center, rgba(71, 71, 71, 0.47), #080808);
-  -webkit-box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #58A4B0, 0px 0px 12px #020402, 0px 0px 15px #FFFAFA, 0px 0px 18px #020402;
-          box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #58A4B0, 0px 0px 12px #020402, 0px 0px 15px #FFFAFA, 0px 0px 18px #020402;
 }
 
 /***************************************************************************************
@@ -350,7 +353,6 @@ header::after {
 
 .skill .skillIcon {
   font-size: 20vh;
-  text-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba;
 }
 
 .skill .frontEnd .frontEndTitle {
@@ -359,6 +361,7 @@ header::after {
 
 .skill .frontEnd .frontEndIcon {
   color: #6e41be;
+  text-shadow: 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
 }
 
 .skill .frontEnd .frontEndBody h4 {
@@ -371,6 +374,7 @@ header::after {
 
 .skill .backEnd .backEndIcon {
   color: #1ca2f4;
+  text-shadow: 0px 0px 5px #58A4B0, 0px 0px 10px #020402, 0px 0px 15px #58A4B0;
 }
 
 .skill .backEnd .backEndBody h4 {
@@ -383,6 +387,7 @@ header::after {
 
 .skill .webDesign .webDesignIcon {
   color: #e840ba;
+  text-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba;
 }
 
 .skill .webDesign .webDesignBody h4 {
@@ -404,8 +409,8 @@ header::after {
   top: 0;
   bottom: 0;
   left: 20%;
-  -webkit-box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 4px #020402, 0px 0px 10px #e840ba;
-          box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 4px #020402, 0px 0px 10px #e840ba;
+  -webkit-box-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba;
+          box-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba;
 }
 
 .timelineContainer .leftPart {
@@ -417,8 +422,8 @@ header::after {
 }
 
 .timelineContainer .rightPart {
-  -webkit-box-shadow: 0px 0px 1px #FFFAFA, 0px 0px 3px #58A4B0, 0px 0px 5px #FFFAFA, 0px 0px 10px #58A4B0;
-          box-shadow: 0px 0px 1px #FFFAFA, 0px 0px 3px #58A4B0, 0px 0px 5px #FFFAFA, 0px 0px 10px #58A4B0;
+  -webkit-box-shadow: 0px 0px 5px #58A4B0, 0px 0px 10px #020402, 0px 0px 15px #58A4B0, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
+          box-shadow: 0px 0px 5px #58A4B0, 0px 0px 10px #020402, 0px 0px 15px #58A4B0, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
   margin-right: 2.5rem;
   margin-left: 11%;
   position: relative;
@@ -431,7 +436,7 @@ header::after {
   width: 25px;
   top: calc(50% - 12.5px);
   left: -0.7rem;
-  text-shadow: 0px 0px 2px #FFFAFA, 0px 0px 5px #58A4B0, 0px 0px 10px #FFFAFA, 0px 0px 15px #58A4B0;
+  text-shadow: 0px 0px 5px #58A4B0, 0px 0px 10px #020402, 0px 0px 15px #58A4B0, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
   font-size: 2rem;
 }
 
@@ -446,8 +451,8 @@ header::after {
   font-size: 1.5rem;
   padding: 0;
   color: #e840ba;
-  -webkit-box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 4px #020402, 0px 0px 10px #e840ba;
-          box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 4px #020402, 0px 0px 10px #e840ba;
+  -webkit-box-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba;
+          box-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba;
 }
 
 .timelineContainer .timelineBadgeAfterMargin {
@@ -461,8 +466,8 @@ header::after {
   font-size: 1.5rem;
   padding: 0;
   color: #e840ba;
-  -webkit-box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 4px #020402, 0px 0px 10px #e840ba;
-          box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 4px #020402, 0px 0px 10px #e840ba;
+  -webkit-box-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba;
+          box-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba;
 }
 
 .timelineContainer .timelineBadgeEnd {
@@ -477,8 +482,8 @@ header::after {
   font-size: 1.5rem;
   padding: 0;
   color: #e840ba;
-  -webkit-box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 4px #020402, 0px 0px 15px #58A4B0, 0px 0px 20px #e840ba;
-          box-shadow: 0px 0px 2px #FFFAFA, 0px 0px 4px #020402, 0px 0px 15px #58A4B0, 0px 0px 20px #e840ba;
+  -webkit-box-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba, 0px 0px 5px #58A4B0, 0px 0px 10px #020402, 0px 0px 15px #58A4B0;
+          box-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba, 0px 0px 5px #58A4B0, 0px 0px 10px #020402, 0px 0px 15px #58A4B0;
 }
 
 /***************************************************************************************
@@ -487,8 +492,8 @@ header::after {
 .portfolio .portfolioProjectContainer {
   position: relative;
   height: 50vh;
-  -webkit-box-shadow: 0px 0px 1px #FFFAFA, 0px 0px 3px #e840ba, 0px 0px 7px #FFFAFA, 0px 0px 15px #e840ba;
-          box-shadow: 0px 0px 1px #FFFAFA, 0px 0px 3px #e840ba, 0px 0px 7px #FFFAFA, 0px 0px 15px #e840ba;
+  -webkit-box-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
+          box-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
 }
 
 .portfolio .portfolioProjectContainer .portfolioProject {
@@ -548,6 +553,16 @@ header::after {
   background-color: #FFFAFA;
 }
 
+.portfolio .portfolioProjectContainer .portfolioProject .portfolioProjectDescription .portfolioProjectDescriptionBody ul {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+.portfolio .portfolioProjectContainer .portfolioProject .portfolioProjectDescription .btn-outline-info:hover {
+  -webkit-box-shadow: 0px 0px 2px #020402, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be, 0px 0px 5px #020402;
+          box-shadow: 0px 0px 2px #020402, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be, 0px 0px 5px #020402;
+}
+
 .portfolio .portfolioProjectContainer:hover .portfolioProjectIllustration {
   opacity: 0;
   height: 0vh;
@@ -570,30 +585,29 @@ header::after {
 /***************************************************************************************
 **************************************** Contact *************************************
 ***************************************************************************************/
-.contact .contacctTitle {
+.contact .contactTitle {
   font-size: 2.5rem;
 }
 
 .contact .iconContactTitlePhone {
-  text-shadow: 0px 0px 5px #6e41be, 0px 0px 10px #FFFAFA, 0px 0px 15px #6e41be;
+  text-shadow: 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
 }
 
 .contact .iconContactTitleMail {
-  text-shadow: 0px 0px 5px #58A4B0, 0px 0px 10px #FFFAFA, 0px 0px 15px #58A4B0;
+  text-shadow: 0px 0px 5px #58A4B0, 0px 0px 10px #020402, 0px 0px 15px #58A4B0, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
 }
 
 .contact .iconContactTitle {
   font-size: 7rem;
 }
 
-.contact .iconContact {
-  font-size: 6rem;
-  text-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #FFFAFA, 0px 0px 15px #e840ba;
-}
-
 .contact .textContactPhone {
   color: #6e41be;
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+.contact .textContactPhone:hover {
+  text-shadow: 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
 }
 
 .contact .textContactMail {
@@ -601,9 +615,44 @@ header::after {
   font-size: 1.5rem;
 }
 
-.contact .textContact {
-  color: #e840ba;
-  font-size: 2rem;
+.contact .textContactMail:hover {
+  text-shadow: 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be, 0px 0px 5px #58A4B0, 0px 0px 10px #020402, 0px 0px 15px #58A4B0;
+}
+
+/***************************************************************************************
+**************************************** Mes réseaux *************************************
+***************************************************************************************/
+.networks .networksTitle {
+  font-size: 2.5rem;
+}
+
+.networks .iconNetworks {
+  font-size: 6rem;
+}
+
+.networks .iconNetworks:hover {
+  text-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
+}
+
+/***************************************************************************************
+**************************************** Media querry ************************************
+***************************************************************************************/
+@media screen and (max-width: 991.5px) {
+  /***************************************************************************************
+**************************************** Skill ************************************
+***************************************************************************************/
+  .skill .skillIcon {
+    display: none;
+  }
+  /***************************************************************************************
+**************************************** Contact *************************************
+***************************************************************************************/
+  .contact .textContactPhone {
+    font-size: 1.3rem;
+  }
+  .contact .textContactMail {
+    font-size: 1.3rem;
+  }
 }
 
 @media screen and (max-width: 765px) {
@@ -701,12 +750,6 @@ header::after {
     left: 7.5%;
   }
   /***************************************************************************************
-**************************************** Skill ************************************
-***************************************************************************************/
-  .skill .skillIcon {
-    display: none;
-  }
-  /***************************************************************************************
 **************************************** Portfolio ************************************
 ***************************************************************************************/
   .portfolio .portfolioProjectContainer {
@@ -765,19 +808,22 @@ header::after {
   /***************************************************************************************
 **************************************** Contact ************************************
 ***************************************************************************************/
+  .contact .contactTitle {
+    font-size: 2rem;
+  }
   .contact .iconContactTitle {
     font-size: 5.5rem;
   }
-  .contact .iconContact {
-    font-size: 4.5rem;
-  }
   .contact .textContactPhone {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
   }
   .contact .textContactMail {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
   }
-  .contact .textContact {
+  /***************************************************************************************
+**************************************** Mes réseaux *************************************
+***************************************************************************************/
+  .networks .networksTitle {
     font-size: 2rem;
   }
   /***************************************************************************************

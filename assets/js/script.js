@@ -17,6 +17,7 @@ let skillNavbar = document.getElementById('skillNavbar');
 let careerNavbar = document.getElementById('careerNavbar');
 let portfolioNavbar = document.getElementById('portfolioNavbar');
 let contactNavbar = document.getElementById('contactNavbar');
+let networksNavbar = document.getElementById('networksNavbar');
 let hamburgerNavbarbutton = document.getElementById('hamburgerNavbarbutton');
 /*-----------------------------variable other-----------------------------*/
 let aboutMeContact = document.getElementById('aboutMeContact');
@@ -31,7 +32,7 @@ document.addEventListener('mousedown', function(e) { e.preventDefault(); }, fals
 window.onscroll = () => {
     if (window.scrollY >= 10) {
         navbar.style.backgroundColor = 'rgba(0,0,0,0.8)';
-        navbar.style.boxShadow = '0px 0px 2px #FFFAFA, 0px 0px 5px #e840ba, 0px 0px 12px #020402, 0px 0px 15px #e840ba, 0px 0px 18px #020402, 0px 0px 20px #e840ba';
+        navbar.style.boxShadow = '0px 0px 2px #e840ba, 0px 0px 5px #020402, 0px 0px 12px #e840ba, 0px 0px 15px #6e41be, 0px 0px 18px #020402, 0px 0px 20px #6e41be';
     } else if (window.innerWidth > 756) {
         navbar.style.backgroundColor = 'rgba(0,0,0,0.2)';
         navbar.style.boxShadow = 'none';
@@ -96,10 +97,15 @@ portfolioNavbar.onclick = () => {
 }
 contactNavbar.onclick = () => {
     if (window.innerWidth > 765) {
-        window.scrollTo(0, 3400);
+        window.scrollTo(0, 3650);
     } else {
-        window.scrollTo(0, 4200);
+        window.scrollTo(0, 4350);
     }
+}
+
+networksNavbar.onclick = () => {
+    window.scrollTo(0, 4750);
+
 }
 
 /****************************************************************************************
@@ -126,6 +132,9 @@ hamburgerNavbarbutton.onclick = () => {
         //contact
         contactNavbar.setAttribute('data-bs-toggle', 'collapse');
         contactNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
+        //mes réseaux
+        networksNavbar.setAttribute('data-bs-toggle', 'collapse');
+        networksNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
     }
 }
 
@@ -153,11 +162,7 @@ aboutMeContact.onclick = () => {
      **************************************** timeline End Button ****************************
      ***************************************************************************************/
 timelineBadgeEnd.onclick = () => {
-    if (window.innerWidth > 765) {
-        window.scrollTo(0, 2010);
-    } else {
-        window.scrollTo(0, 2400);
-    }
+    window.scrollTo(0, 2050);
 }
 
 /****************************************************************************************
