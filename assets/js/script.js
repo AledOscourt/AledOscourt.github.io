@@ -9,21 +9,7 @@ AOS.init();
  ***************************************************************************************/
 /*-----------------------------variable navbar-----------------------------*/
 
-let navbar = document.getElementById('navbar');
-let navbarNeon = document.getElementById('navbarNeon');
-let homeOfPageNavbar = document.getElementById('homeOfPageNavbar');
-let aboutMeNavbar = document.getElementById('aboutMeNavbar');
-let skillNavbar = document.getElementById('skillNavbar');
-let careerNavbar = document.getElementById('careerNavbar');
-let portfolioNavbar = document.getElementById('portfolioNavbar');
-let contactNavbar = document.getElementById('contactNavbar');
-let networksNavbar = document.getElementById('networksNavbar');
-let hamburgerNavbarbutton = document.getElementById('hamburgerNavbarbutton');
-/*-----------------------------variable other-----------------------------*/
-let aboutMeContact = document.getElementById('aboutMeContact');
-let chevronHeader = document.getElementById('chevronHeader');
-let timelineBadgeEnd = document.getElementById('timelineBadgeEnd');
-let homeBottomButton = document.getElementById('homeBottomButton');
+
 //Empéche la sélection de texte dans le document ainsi que le dblclick
 document.addEventListener('mousedown', function(e) { e.preventDefault(); }, false);
 /****************************************************************************************
@@ -142,25 +128,27 @@ hamburgerNavbarbutton.onclick = () => {
  **************************************** Header chevron onclick ************************
  ***************************************************************************************/
 chevronHeader.onclick = () => {
-        if (window.innerWidth > 765) {
-            window.scrollTo(0, 710);
-        } else {
-            window.scrollTo(0, 620);
-        }
+    if (window.innerWidth > 765) {
+        window.scrollTo(0, 710);
+    } else {
+        window.scrollTo(0, 620);
     }
-    /****************************************************************************************
-     **************************************** Header chevron onclick ************************
-     ***************************************************************************************/
+}
+
+/****************************************************************************************
+ **************************************** Header chevron onclick ************************
+ ***************************************************************************************/
 aboutMeContact.onclick = () => {
-        if (window.innerWidth > 765) {
-            window.scrollTo(0, 3400);
-        } else {
-            window.scrollTo(0, 3600);
-        }
+    if (window.innerWidth > 765) {
+        window.scrollTo(0, 3400);
+    } else {
+        window.scrollTo(0, 3600);
     }
-    /****************************************************************************************
-     **************************************** timeline End Button ****************************
-     ***************************************************************************************/
+}
+
+/****************************************************************************************
+ **************************************** timeline End Button ****************************
+ ***************************************************************************************/
 timelineBadgeEnd.onclick = () => {
     window.scrollTo(0, 2050);
 }

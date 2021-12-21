@@ -111,7 +111,7 @@ header .row .chevron {
   cursor: pointer;
   z-index: 1;
   font-size: 2rem;
-  text-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
+  text-shadow: 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba, 0px 0px 5px #e840ba, 0px 0px 10px #020402, 0px 0px 15px #e840ba;
 }
 
 header .row .chevron .firstChevron {
@@ -607,7 +607,7 @@ header::after {
 }
 
 .contact .textContactPhone:hover {
-  text-shadow: 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be, 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be;
+  text-shadow: 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be, 0px 0px 5px #020402;
 }
 
 .contact .textContactMail {
@@ -616,7 +616,7 @@ header::after {
 }
 
 .contact .textContactMail:hover {
-  text-shadow: 0px 0px 5px #6e41be, 0px 0px 10px #020402, 0px 0px 15px #6e41be, 0px 0px 5px #58A4B0, 0px 0px 10px #020402, 0px 0px 15px #58A4B0;
+  text-shadow: 0px 0px 5px #020402, 0px 0px 5px #58A4B0, 0px 0px 10px #020402, 0px 0px 15px #58A4B0, 0px 0px 5px #020402;
 }
 
 /***************************************************************************************

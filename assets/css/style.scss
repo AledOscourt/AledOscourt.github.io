@@ -123,7 +123,7 @@
                     cursor: pointer;
                     z-index: 1;
                     font-size: 2rem;
-                    text-shadow: $text-shadow-pink, $text-shadow-purple;
+                    text-shadow: $text-shadow-pink, $text-shadow-pink;
                     .firstChevron {
                         position: absolute;
                         animation-name: chevroAnimation;
@@ -530,14 +530,14 @@
                 color: $color-purple;
                 font-size: 1.5rem;
                 &:hover {
-                    text-shadow: $text-shadow-purple, $text-shadow-purple;
+                    text-shadow: $text-shadow-purple, 0px 0px 5px $color-black;
                 }
             }
             .textContactMail {
                 color: $color-blue;
                 font-size: 1.5rem;
                 &:hover {
-                    text-shadow: $text-shadow-purple, $text-shadow-blue;
+                    text-shadow: 0px 0px 5px $color-black, $text-shadow-blue, 0px 0px 5px $color-black;
                 }
             }
         }
