@@ -74,18 +74,11 @@ careerNavbar.onclick = () => {
     }
 
 }
-portfolioNavbar.onclick = () => {
+contactNavbar.onclick = () => {
     if (window.innerWidth > 765) {
         window.scrollTo(0, 3180);
     } else {
         window.scrollTo(0, 3340);
-    }
-}
-contactNavbar.onclick = () => {
-    if (window.innerWidth > 765) {
-        window.scrollTo(0, 3650);
-    } else {
-        window.scrollTo(0, 4350);
     }
 }
 
@@ -111,10 +104,6 @@ hamburgerNavbarbutton.onclick = () => {
         //Parcours
         careerNavbar.setAttribute('data-bs-toggle', 'collapse');
         careerNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
-
-        //réalisation
-        portfolioNavbar.setAttribute('data-bs-toggle', 'collapse');
-        portfolioNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
         //contact
         contactNavbar.setAttribute('data-bs-toggle', 'collapse');
         contactNavbar.setAttribute('data-bs-target', '#navbarSupportedContent');
